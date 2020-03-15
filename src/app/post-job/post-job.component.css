@@ -1,0 +1,44 @@
+@media(min-width: 406px){
+    .formcont{
+        background-color: #DCDCDC;
+        width: 400px;
+        height: 40px;
+      }
+}
+
+@media(min-width: 1200px){
+    .formcont{
+        background-color: #DCDCDC;
+        width: 600px;
+        height: 40px;
+      }
+}
+.input-group-btn{
+  
+    border-left: none;
+    background-color: white;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  .input-group-btn:hover{
+    box-shadow: none;
+  }
+  .form-control{
+    border-right: none;
+    border: none;
+    color: white;
+  }
+  .form-control:hover{
+    box-shadow: none;
+  }
+  .form2{
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  .sub{
+    background-color: teal;
+  }
+  .sub:hover{
+    background-color: #004c4c	;
+  }
+  

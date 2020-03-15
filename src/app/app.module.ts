@@ -7,6 +7,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SkillTestComponent } from './skill-test/skill-test.component';
 import { SavedJobsComponent } from './saved-jobs/saved-jobs.component';
 import { AppliedJobsComponent } from './applied-jobs/applied-jobs.component';
+import { PostJobComponent } from './post-job/post-job.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { AppliedJobsComponent } from './applied-jobs/applied-jobs.component';
     NavbarComponent,
     SkillTestComponent,
     SavedJobsComponent,
-    AppliedJobsComponent
+    AppliedJobsComponent,
+    PostJobComponent
   ],
   imports: [
     BrowserModule,
