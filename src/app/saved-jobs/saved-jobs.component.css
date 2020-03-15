@@ -1,0 +1,59 @@
+.header{
+    background-color: teal;
+    height: 63px;
+    color: white;
+    
+    display: flex;
+    
+    align-items: center;
+    padding-left: 30px;
+  }
+  h2{
+    font-size: 19px;
+    font-weight: normal;
+  
+  }
+  .card{
+      width: 1000px;
+  }
+  .card-img{
+      width: 100px;
+      float: left;
+  
+  }
+  #symbols{
+      float: right;
+      margin-top: 20px;
+      
+  }
+  #space{
+      padding-left: 10px;
+  }
+  h4{
+      color: teal;
+      font-size: 20px;
+      
+  }
+  a{
+      color: gray;
+  }
+  a:hover{
+      text-decoration: none;
+      color: gray;
+  
+  }
+  .card{
+      border: none;
+  }
+
+@media (min-width: 406px) {
+    #crdtxt{
+        padding-left: 27%;
+    }
+}
+
+@media(min-width: 1200px){
+    #crdtxt{
+        padding-left: 13%;
+    }
+}
