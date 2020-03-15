@@ -8,6 +8,7 @@ import { SkillTestComponent } from './skill-test/skill-test.component';
 import { SavedJobsComponent } from './saved-jobs/saved-jobs.component';
 import { AppliedJobsComponent } from './applied-jobs/applied-jobs.component';
 import { PostJobComponent } from './post-job/post-job.component';
+import { JobPostingsComponent } from './job-postings/job-postings.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { PostJobComponent } from './post-job/post-job.component';
     SkillTestComponent,
     SavedJobsComponent,
     AppliedJobsComponent,
-    PostJobComponent
+    PostJobComponent,
+    JobPostingsComponent
   ],
   imports: [
     BrowserModule,

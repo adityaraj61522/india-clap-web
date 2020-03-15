@@ -4,6 +4,7 @@ import { SkillTestComponent } from './skill-test/skill-test.component';
 import { SavedJobsComponent } from './saved-jobs/saved-jobs.component';
 import { AppliedJobsComponent } from './applied-jobs/applied-jobs.component';
 import { PostJobComponent } from './post-job/post-job.component';
+import { JobPostingsComponent } from './job-postings/job-postings.component';
 
 
 const routes: Routes = [
@@ -11,7 +12,8 @@ const routes: Routes = [
   { path: 'take-test', component: SkillTestComponent },
   { path: 'saved-jobs', component: SavedJobsComponent },
   { path: 'applied-jobs', component: AppliedJobsComponent },
-  { path: 'post-job', component: PostJobComponent }
+  { path: 'post-job', component: PostJobComponent },
+  { path: 'job-postings', component: JobPostingsComponent }
 ];
 
 @NgModule({
