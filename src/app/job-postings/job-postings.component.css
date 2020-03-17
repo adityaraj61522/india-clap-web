@@ -1,3 +1,13 @@
+.header{
+    background-color: teal;
+    height: 63px;
+    color: white;
+    
+    display: flex;
+    
+    align-items: center;
+    padding-left: 30px;
+  }
 h2{
     font-size: 19px;
     font-weight: normal;
@@ -32,3 +42,6 @@ h2{
       color: gray;
   
   }
+  .place{
+    border: 1px gray solid;
+}

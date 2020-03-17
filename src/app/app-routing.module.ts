@@ -5,6 +5,9 @@ import { SavedJobsComponent } from './saved-jobs/saved-jobs.component';
 import { AppliedJobsComponent } from './applied-jobs/applied-jobs.component';
 import { PostJobComponent } from './post-job/post-job.component';
 import { JobPostingsComponent } from './job-postings/job-postings.component';
+import { JobPostEditComponent } from './job-post-edit/job-post-edit.component';
+import { ViewCandidatesComponent } from './view-candidates/view-candidates.component';
+import { ViewShortlistTabComponent } from './view-shortlist-tab/view-shortlist-tab.component';
 
 
 const routes: Routes = [
@@ -13,7 +16,10 @@ const routes: Routes = [
   { path: 'saved-jobs', component: SavedJobsComponent },
   { path: 'applied-jobs', component: AppliedJobsComponent },
   { path: 'post-job', component: PostJobComponent },
-  { path: 'job-postings', component: JobPostingsComponent }
+  { path: 'job-postings', component: JobPostingsComponent },
+  { path: 'edit-jobs', component: JobPostEditComponent },
+  { path: 'view-candidates', component: ViewCandidatesComponent },
+  { path: 'view-shortlisted', component: ViewShortlistTabComponent }
 ];
 
 @NgModule({

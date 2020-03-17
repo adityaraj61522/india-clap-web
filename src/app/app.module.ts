@@ -9,6 +9,9 @@ import { SavedJobsComponent } from './saved-jobs/saved-jobs.component';
 import { AppliedJobsComponent } from './applied-jobs/applied-jobs.component';
 import { PostJobComponent } from './post-job/post-job.component';
 import { JobPostingsComponent } from './job-postings/job-postings.component';
+import { JobPostEditComponent } from './job-post-edit/job-post-edit.component';
+import { ViewCandidatesComponent } from './view-candidates/view-candidates.component';
+import { ViewShortlistTabComponent } from './view-shortlist-tab/view-shortlist-tab.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { JobPostingsComponent } from './job-postings/job-postings.component';
     SavedJobsComponent,
     AppliedJobsComponent,
     PostJobComponent,
-    JobPostingsComponent
+    JobPostingsComponent,
+    JobPostEditComponent,
+    ViewCandidatesComponent,
+    ViewShortlistTabComponent
   ],
   imports: [
     BrowserModule,
