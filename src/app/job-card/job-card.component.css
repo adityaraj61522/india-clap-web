@@ -40,11 +40,24 @@
      float: left;
      margin-left: 50px;
      margin-bottom: 30px;
-    
-  
-     
-  }
+}
   .place{
     border: 1px gray solid;
     padding-top: 100px;
   }
+
+  .cards{
+    margin-left: 200px;
+  }
+
+  @media (min-width: 406px) {
+    .cards{
+        margin-left: 70px;
+      }
+}
+
+@media (min-width: 1200px) {
+    .cards{
+        margin-left: 200px;
+      }
+}
