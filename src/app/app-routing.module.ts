@@ -13,6 +13,7 @@ import { JobCardComponent } from './job-card/job-card.component';
 import { VariousSectorsJobsComponent } from './various-sectors-jobs/various-sectors-jobs.component';
 import { VariousSectorsJobsFiltersComponent } from './various-sectors-jobs-filters/various-sectors-jobs-filters.component';
 import { InstantApplySearchComponent } from './instant-apply-search/instant-apply-search.component';
+import { FavSaveApplyComponent } from './fav-save-apply/fav-save-apply.component';
 
 
 const routes: Routes = [
@@ -29,7 +30,8 @@ const routes: Routes = [
   { path: 'jobs-card', component: JobCardComponent },
   { path: 'various-sectors', component: VariousSectorsJobsComponent },
   { path: 'various-jobs-filters', component: VariousSectorsJobsFiltersComponent },
-  { path: 'instant-apply-search', component: InstantApplySearchComponent }
+  { path: 'instant-apply-search', component: InstantApplySearchComponent },
+  { path: 'fav-save-apply', component: FavSaveApplyComponent }
 ];
 
 @NgModule({
