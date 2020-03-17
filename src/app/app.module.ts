@@ -15,6 +15,7 @@ import { ViewShortlistTabComponent } from './view-shortlist-tab/view-shortlist-t
 import { UserAccountComponent } from './user-account/user-account.component';
 import { JobCardComponent } from './job-card/job-card.component';
 import { VariousSectorsJobsComponent } from './various-sectors-jobs/various-sectors-jobs.component';
+import { VariousSectorsJobsFiltersComponent } from './various-sectors-jobs-filters/various-sectors-jobs-filters.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { VariousSectorsJobsComponent } from './various-sectors-jobs/various-sect
     ViewShortlistTabComponent,
     UserAccountComponent,
     JobCardComponent,
-    VariousSectorsJobsComponent
+    VariousSectorsJobsComponent,
+    VariousSectorsJobsFiltersComponent
   ],
   imports: [
     BrowserModule,

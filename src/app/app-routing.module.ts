@@ -11,6 +11,7 @@ import { ViewShortlistTabComponent } from './view-shortlist-tab/view-shortlist-t
 import { UserAccountComponent } from './user-account/user-account.component';
 import { JobCardComponent } from './job-card/job-card.component';
 import { VariousSectorsJobsComponent } from './various-sectors-jobs/various-sectors-jobs.component';
+import { VariousSectorsJobsFiltersComponent } from './various-sectors-jobs-filters/various-sectors-jobs-filters.component';
 
 
 const routes: Routes = [
@@ -25,7 +26,8 @@ const routes: Routes = [
   { path: 'view-shortlisted', component: ViewShortlistTabComponent },
   { path: 'user-account', component: UserAccountComponent },
   { path: 'jobs-card', component: JobCardComponent },
-  { path: 'various-sectors', component: VariousSectorsJobsComponent }
+  { path: 'various-sectors', component: VariousSectorsJobsComponent },
+  { path: 'various-jobs-filters', component: VariousSectorsJobsFiltersComponent }
 ];
 
 @NgModule({
