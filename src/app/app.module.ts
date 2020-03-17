@@ -18,6 +18,7 @@ import { VariousSectorsJobsComponent } from './various-sectors-jobs/various-sect
 import { VariousSectorsJobsFiltersComponent } from './various-sectors-jobs-filters/various-sectors-jobs-filters.component';
 import { InstantApplySearchComponent } from './instant-apply-search/instant-apply-search.component';
 import { FavSaveApplyComponent } from './fav-save-apply/fav-save-apply.component';
+import { SelectAllApplyComponent } from './select-all-apply/select-all-apply.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { FavSaveApplyComponent } from './fav-save-apply/fav-save-apply.component
     VariousSectorsJobsComponent,
     VariousSectorsJobsFiltersComponent,
     InstantApplySearchComponent,
-    FavSaveApplyComponent
+    FavSaveApplyComponent,
+    SelectAllApplyComponent
   ],
   imports: [
     BrowserModule,

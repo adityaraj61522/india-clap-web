@@ -14,6 +14,7 @@ import { VariousSectorsJobsComponent } from './various-sectors-jobs/various-sect
 import { VariousSectorsJobsFiltersComponent } from './various-sectors-jobs-filters/various-sectors-jobs-filters.component';
 import { InstantApplySearchComponent } from './instant-apply-search/instant-apply-search.component';
 import { FavSaveApplyComponent } from './fav-save-apply/fav-save-apply.component';
+import { SelectAllApplyComponent } from './select-all-apply/select-all-apply.component';
 
 
 const routes: Routes = [
@@ -31,7 +32,8 @@ const routes: Routes = [
   { path: 'various-sectors', component: VariousSectorsJobsComponent },
   { path: 'various-jobs-filters', component: VariousSectorsJobsFiltersComponent },
   { path: 'instant-apply-search', component: InstantApplySearchComponent },
-  { path: 'fav-save-apply', component: FavSaveApplyComponent }
+  { path: 'fav-save-apply', component: FavSaveApplyComponent },
+  { path: 'select-all-apply', component: SelectAllApplyComponent }
 ];
 
 @NgModule({
