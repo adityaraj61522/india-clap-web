@@ -1,0 +1,153 @@
+.header{
+    background-color: teal;
+    height: 63px;
+    color: white;
+    
+    display: flex;
+    
+    align-items: center;
+    padding-left: 30px;
+  }
+  h2{
+    font-size: 19px;
+    font-weight: normal;
+  
+  }
+  input[type=radio] {
+      border: 0px;
+      width: 100%;
+      height: 1em;
+  }
+  .mainbody{
+    border: 1px gray solid;
+    height: 1000px;
+    
+  }
+  #frm2{ /*forms*/
+    height: 40px;
+    background-color: #ebebeb;
+    
+  }
+  .place{
+    
+    height: 400px;
+  }
+  #checked{
+    float: right;
+    width: 60px;
+    
+    }
+   
+  h3{
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  
+  .btnplc{  /*search button*/
+    margin-top: 30px;
+    margin-left: 28%;
+    background-color: teal;
+    border: 1px black solid;
+    border-radius: 5px;
+  
+  }
+  
+  #from{  /*form named from*/
+    float: left;
+  
+  }
+  #filter{
+    
+    margin-left: 50px;
+  }
+
+  @media (min-width: 456px) {
+    .place{
+  
+        margin-left: 7%;
+      
+        
+      }
+      #checked{
+        
+        margin-right: 60px;
+        
+      }
+      #frm2{  /*form */
+        
+        width: 356px;
+      }
+      #frm3{ /*form headed from*/
+ 
+  
+
+        width: 150px;
+       }
+       #frm4{/*form headed to*/
+       
+        
+       
+        width: 150px;
+       }
+       #from{
+         margin-right: 50px;
+       }
+       #button{
+         float: right;
+         margin-left: 50px;
+         
+       }
+}
+
+@media (min-width: 768px) {
+    #button{
+        float: right;
+        margin-left: 350px;
+        
+      }
+}
+
+
+@media (min-width: 992px) {
+    #from{
+        margin-right: 50px;
+      }
+}
+
+@media (min-width: 1200px) {
+    .place{
+        margin-top: 5%;
+        margin-left: 30%;
+        
+        
+      }
+      #from{
+        margin-right: 70px;
+      }
+      #frm2{
+        
+        width: 468px;
+      }
+      #frm3{ /*form with heading from*/
+ 
+  
+
+        width: 200px;
+       }
+       #frm4{/*form with heading to*/
+       
+        
+       
+        width: 200px;
+       }
+       #button{
+         float: right;
+         margin-left: 650px;
+         
+       }
+       .hbtn{
+         font-size: 17px;
+         width: 154px;
+         height: 40px;
+       }
+}

@@ -12,6 +12,7 @@ import { UserAccountComponent } from './user-account/user-account.component';
 import { JobCardComponent } from './job-card/job-card.component';
 import { VariousSectorsJobsComponent } from './various-sectors-jobs/various-sectors-jobs.component';
 import { VariousSectorsJobsFiltersComponent } from './various-sectors-jobs-filters/various-sectors-jobs-filters.component';
+import { InstantApplySearchComponent } from './instant-apply-search/instant-apply-search.component';
 
 
 const routes: Routes = [
@@ -27,7 +28,8 @@ const routes: Routes = [
   { path: 'user-account', component: UserAccountComponent },
   { path: 'jobs-card', component: JobCardComponent },
   { path: 'various-sectors', component: VariousSectorsJobsComponent },
-  { path: 'various-jobs-filters', component: VariousSectorsJobsFiltersComponent }
+  { path: 'various-jobs-filters', component: VariousSectorsJobsFiltersComponent },
+  { path: 'instant-apply-search', component: InstantApplySearchComponent }
 ];
 
 @NgModule({
