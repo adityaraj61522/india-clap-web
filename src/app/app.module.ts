@@ -12,6 +12,7 @@ import { JobPostingsComponent } from './job-postings/job-postings.component';
 import { JobPostEditComponent } from './job-post-edit/job-post-edit.component';
 import { ViewCandidatesComponent } from './view-candidates/view-candidates.component';
 import { ViewShortlistTabComponent } from './view-shortlist-tab/view-shortlist-tab.component';
+import { UserAccountComponent } from './user-account/user-account.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ViewShortlistTabComponent } from './view-shortlist-tab/view-shortlist-t
     JobPostingsComponent,
     JobPostEditComponent,
     ViewCandidatesComponent,
-    ViewShortlistTabComponent
+    ViewShortlistTabComponent,
+    UserAccountComponent
   ],
   imports: [
     BrowserModule,

@@ -8,6 +8,7 @@ import { JobPostingsComponent } from './job-postings/job-postings.component';
 import { JobPostEditComponent } from './job-post-edit/job-post-edit.component';
 import { ViewCandidatesComponent } from './view-candidates/view-candidates.component';
 import { ViewShortlistTabComponent } from './view-shortlist-tab/view-shortlist-tab.component';
+import { UserAccountComponent } from './user-account/user-account.component';
 
 
 const routes: Routes = [
@@ -19,7 +20,8 @@ const routes: Routes = [
   { path: 'job-postings', component: JobPostingsComponent },
   { path: 'edit-jobs', component: JobPostEditComponent },
   { path: 'view-candidates', component: ViewCandidatesComponent },
-  { path: 'view-shortlisted', component: ViewShortlistTabComponent }
+  { path: 'view-shortlisted', component: ViewShortlistTabComponent },
+  { path: 'user-account', component: UserAccountComponent }
 ];
 
 @NgModule({
