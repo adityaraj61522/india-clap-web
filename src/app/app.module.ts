@@ -19,6 +19,7 @@ import { VariousSectorsJobsFiltersComponent } from './various-sectors-jobs-filte
 import { InstantApplySearchComponent } from './instant-apply-search/instant-apply-search.component';
 import { FavSaveApplyComponent } from './fav-save-apply/fav-save-apply.component';
 import { SelectAllApplyComponent } from './select-all-apply/select-all-apply.component';
+import { BannerComponent } from './banner/banner.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { SelectAllApplyComponent } from './select-all-apply/select-all-apply.com
     VariousSectorsJobsFiltersComponent,
     InstantApplySearchComponent,
     FavSaveApplyComponent,
-    SelectAllApplyComponent
+    SelectAllApplyComponent,
+    BannerComponent
   ],
   imports: [
     BrowserModule,
