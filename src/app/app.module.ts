@@ -21,6 +21,7 @@ import { FavSaveApplyComponent } from './fav-save-apply/fav-save-apply.component
 import { SelectAllApplyComponent } from './select-all-apply/select-all-apply.component';
 import { BannerComponent } from './banner/banner.component';
 import { JobDescriptionComponent } from './job-description/job-description.component';
+import { ProfileShareAlertComponent } from './profile-share-alert/profile-share-alert.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { JobDescriptionComponent } from './job-description/job-description.compo
     FavSaveApplyComponent,
     SelectAllApplyComponent,
     BannerComponent,
-    JobDescriptionComponent
+    JobDescriptionComponent,
+    ProfileShareAlertComponent
   ],
   imports: [
     BrowserModule,
