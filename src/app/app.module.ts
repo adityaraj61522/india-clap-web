@@ -20,6 +20,7 @@ import { InstantApplySearchComponent } from './instant-apply-search/instant-appl
 import { FavSaveApplyComponent } from './fav-save-apply/fav-save-apply.component';
 import { SelectAllApplyComponent } from './select-all-apply/select-all-apply.component';
 import { BannerComponent } from './banner/banner.component';
+import { JobDescriptionComponent } from './job-description/job-description.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { BannerComponent } from './banner/banner.component';
     InstantApplySearchComponent,
     FavSaveApplyComponent,
     SelectAllApplyComponent,
-    BannerComponent
+    BannerComponent,
+    JobDescriptionComponent
   ],
   imports: [
     BrowserModule,
