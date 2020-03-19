@@ -16,6 +16,7 @@ import { InstantApplySearchComponent } from './instant-apply-search/instant-appl
 import { FavSaveApplyComponent } from './fav-save-apply/fav-save-apply.component';
 import { SelectAllApplyComponent } from './select-all-apply/select-all-apply.component';
 import { JobDescriptionComponent } from './job-description/job-description.component';
+import { UploadResumeComponent } from './upload-resume/upload-resume.component';
 
 
 const routes: Routes = [
@@ -35,7 +36,8 @@ const routes: Routes = [
   { path: 'instant-apply-search', component: InstantApplySearchComponent },
   { path: 'fav-save-apply', component: FavSaveApplyComponent },
   { path: 'select-all-apply', component: SelectAllApplyComponent },
-  { path: 'job-description', component: JobDescriptionComponent }
+  { path: 'job-description', component: JobDescriptionComponent },
+  { path: 'upload-resume', component: UploadResumeComponent }
 ];
 
 @NgModule({

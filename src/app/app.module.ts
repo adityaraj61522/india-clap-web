@@ -22,6 +22,7 @@ import { SelectAllApplyComponent } from './select-all-apply/select-all-apply.com
 import { BannerComponent } from './banner/banner.component';
 import { JobDescriptionComponent } from './job-description/job-description.component';
 import { ProfileShareAlertComponent } from './profile-share-alert/profile-share-alert.component';
+import { UploadResumeComponent } from './upload-resume/upload-resume.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { ProfileShareAlertComponent } from './profile-share-alert/profile-share-
     SelectAllApplyComponent,
     BannerComponent,
     JobDescriptionComponent,
-    ProfileShareAlertComponent
+    ProfileShareAlertComponent,
+    UploadResumeComponent
   ],
   imports: [
     BrowserModule,
