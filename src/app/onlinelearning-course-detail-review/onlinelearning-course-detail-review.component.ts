@@ -11,5 +11,20 @@ export class OnlinelearningCourseDetailReviewComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  like()
+  {
+    console.log("like")
+  }
+  comment()
+  {
+    console.log("comment")
+  }
+  react()
+  {
+    console.log("react")
+  }
+  report()
+  {
+    console.log("report")
+  }
 }
