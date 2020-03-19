@@ -1,6 +1,15 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {
+  ReactiveFormsModule,
+  FormsModule,
+  FormGroup,
+  FormControl,
+  FormArray,
+  Validators,
+  FormBuilder,
+  ValidatorFn
+} from "@angular/forms";
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -20,6 +29,11 @@ import { InstantApplySearchComponent } from './instant-apply-search/instant-appl
 import { FavSaveApplyComponent } from './fav-save-apply/fav-save-apply.component';
 import { SelectAllApplyComponent } from './select-all-apply/select-all-apply.component';
 import { BannerComponent } from './banner/banner.component';
+import { FinanceCentreLoanApplyComponent } from './finance-centre-loan-apply/finance-centre-loan-apply.component';
+import { FinanceCentreLoanProvidersComponent } from './finance-centre-loan-providers/finance-centre-loan-providers.component';
+import { OnlinelearningCourseDetailReviewComponent } from './onlinelearning-course-detail-review/onlinelearning-course-detail-review.component';
+import { OnlinelearningNavbarComponent } from './onlinelearning-navbar/onlinelearning-navbar.component';
+import { OnlinelearningHomeComponent } from './onlinelearning-home/onlinelearning-home.component';
 
 @NgModule({
   declarations: [
@@ -40,11 +54,17 @@ import { BannerComponent } from './banner/banner.component';
     InstantApplySearchComponent,
     FavSaveApplyComponent,
     SelectAllApplyComponent,
-    BannerComponent
+    BannerComponent,
+    FinanceCentreLoanApplyComponent,
+    FinanceCentreLoanProvidersComponent,
+    OnlinelearningCourseDetailReviewComponent,
+    OnlinelearningNavbarComponent,
+    OnlinelearningHomeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

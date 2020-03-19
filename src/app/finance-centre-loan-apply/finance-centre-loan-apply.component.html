@@ -1,0 +1,59 @@
+
+<!-- <div class="mainsection" style="margin-top: 0px;" >
+
+
+    <h1 class="microloan"> Apply for micro loan. </h1>
+            
+    <div class="maininput">
+        <div class="inputbox">
+            <label class="inputlable"> State </label>
+            <br>
+            <input class="onlyinput" type="text" placeholder="West Bengal, Haryana etc." [(ngModel)]="obj.state" name ="state">
+            <p *ngIf = "stateValidation" class="error" >This field is required</p>
+
+        </div>
+        <br>
+        <div class="inputbox">
+            <label class="inputlable"> District </label>
+            <br>
+            <input class="onlyinput" type="text" placeholder="North 24 pargans, etc." [(ngModel)]="obj.district" name ="district">
+            <p *ngIf = "districtValidation" class="error" >This field is required</p>
+        </div>
+
+
+    
+
+    <button class="cusbut" type="submit" (click)="submit()"> <i class="fa fa-search" aria-hidden="true"></i> </button>
+
+</div>
+
+
+</div> -->
+
+<!-- <img class="card mx-auto user-img-div img-fluid" src="./../../assets/icons/1x/Asset 2.png" alt=""> -->
+
+      <div class="card loan-search-div mx-auto border">
+        <div class="card-header bg-green-color">
+          <h5 class="mt-1 whtcol proreg">Apply For Micro loan</h5>
+        </div>
+        <div class="card-body">
+            <form>
+                <div class="form-group">
+                  <label class="color-green proreg">State</label>
+                  <input type="text" class="form-control" placeholder="West Bengal, Haryana, etc"  [(ngModel)]="obj.state" name ="state">
+                  <p *ngIf = "districtValidation" class="error" >This field is required</p>
+
+                </div>
+                <div class="form-group">
+                  <label class="color-green proreg">District</label>
+                  <input type="text" class="form-control" placeholder="North 24" [(ngModel)]="obj.district" name ="district">
+                  <p *ngIf = "districtValidation" class="error" >This field is required</p>
+
+                </div>
+                
+                    <div class="mx-auto">
+                      <button type="submit" class="bg-green-color button-size mx-auto" (click)="submit()"><img class="bg-green-color button-img" src="./../../assets/icons/1x/button.png" alt=""></button>
+                    </div>
+              </form>
+        </div>
+      </div>
