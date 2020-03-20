@@ -218,7 +218,7 @@
   }
   
   .rating {
-    background-image: url('./../../assets/icons/1x/1x/star.png');
+    background-image: url('./../../assets/icons/1x/star.png');
     width: 20px;
     height: 20px;
     background-size: cover;
@@ -226,7 +226,7 @@
   }
   
   .unfilled_rating {
-    background-image: url('./../../assets/icons/1x/1x/star.png');
+    background-image: url('./../../assets/icons/1x/star.png');
     width: 20px;
     height: 20px;
     background-size: cover;
