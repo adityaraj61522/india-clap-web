@@ -37,6 +37,7 @@ import { FinanceCentreLoanProvidersComponent } from './finance-centre-loan-provi
 import { OnlinelearningCourseDetailReviewComponent } from './onlinelearning-course-detail-review/onlinelearning-course-detail-review.component';
 import { OnlinelearningNavbarComponent } from './onlinelearning-navbar/onlinelearning-navbar.component';
 import { OnlinelearningHomeComponent } from './onlinelearning-home/onlinelearning-home.component';
+import { ArchiveJobsAlertComponent } from './archive-jobs-alert/archive-jobs-alert.component';
 
 @NgModule({
   declarations: [
@@ -65,7 +66,8 @@ import { OnlinelearningHomeComponent } from './onlinelearning-home/onlinelearnin
     FinanceCentreLoanProvidersComponent,
     OnlinelearningCourseDetailReviewComponent,
     OnlinelearningNavbarComponent,
-    OnlinelearningHomeComponent
+    OnlinelearningHomeComponent,
+    ArchiveJobsAlertComponent
   ],
   imports: [
     BrowserModule,

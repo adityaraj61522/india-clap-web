@@ -1,0 +1,81 @@
+.header{
+    background-color: teal;
+    height: 63px;
+    color: white;
+    
+    display: flex;
+    
+    align-items: center;
+    padding-left: 30px;
+  }
+  h2{
+    font-size: 19px;
+    font-weight: normal;
+  
+  }
+  .card{
+    width: 223px;
+     height: 276px;
+     float: left;
+     margin-left: 100px;
+     margin-bottom: 30px;
+  
+     
+  }
+  h5{
+    font-size: 15px;
+    color: teal;
+    font-weight: normal;
+  }
+  .card-body{
+    text-align: center;
+    padding-top: 50%;
+  }
+  .place{
+    margin-top: 30px;
+  }
+  .one-edge-shadow {
+      -webkit-box-shadow: 0 8px 6px -6px grey;
+         -moz-box-shadow: 0 8px 6px -6px grey;
+              box-shadow: 0 8px 6px -6px grey;
+  }
+  .btn:hover, a:active, a:focus {
+    border: none !important;
+  }
+  .place{
+    border: 1px gray solid;
+    padding-top: 100px;
+  }
+  .teal{
+    background-color: teal;
+  }
+
+  @media (min-width: 406px) {
+    #message{
+        width: 200px;
+        height: 100px;
+        background-color: white;
+        border: 1px gray solid;
+        border-radius: 5px;
+        position: relative;
+        left: 50%;
+        bottom: 100px;
+        padding-left: 10px;
+        padding-top: 5px;
+      }
+}
+
+@media (min-width: 1200px) {
+    #message{
+        width: 250px;
+        height: 100px;
+        background-color: white;
+        border: 1px gray solid;
+        border-radius: 5px;
+        position: relative;
+        left: 87%;
+        bottom: 100px;
+        padding-left: 10px;
+        padding-top: 5px;
+      }
+}

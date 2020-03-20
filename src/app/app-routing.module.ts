@@ -21,6 +21,7 @@ import { FinanceCentreLoanApplyComponent } from './finance-centre-loan-apply/fin
 import { FinanceCentreLoanProvidersComponent } from './finance-centre-loan-providers/finance-centre-loan-providers.component';
 import { OnlinelearningCourseDetailReviewComponent } from './onlinelearning-course-detail-review/onlinelearning-course-detail-review.component';
 import { OnlinelearningHomeComponent } from './onlinelearning-home/onlinelearning-home.component';
+import { ArchiveJobsAlertComponent } from './archive-jobs-alert/archive-jobs-alert.component';
 
 
 const routes: Routes = [
@@ -42,10 +43,11 @@ const routes: Routes = [
   { path: 'select-all-apply', component: SelectAllApplyComponent },
   { path: 'job-description', component: JobDescriptionComponent },
   { path: 'upload-resume', component: UploadResumeComponent },
-  { path: 'apply-micro-loan' , component: FinanceCentreLoanApplyComponent},
-  { path: 'loan-providers', component:FinanceCentreLoanProvidersComponent},
-  { path: 'course-details', component:OnlinelearningCourseDetailReviewComponent},
-  { path: 'online-learning-home' , component:OnlinelearningHomeComponent}
+  { path: 'apply-micro-loan', component: FinanceCentreLoanApplyComponent },
+  { path: 'loan-providers', component: FinanceCentreLoanProvidersComponent },
+  { path: 'course-details', component: OnlinelearningCourseDetailReviewComponent },
+  { path: 'online-learning-home', component: OnlinelearningHomeComponent },
+  { path: 'archive-job-alert', component: ArchiveJobsAlertComponent }
 ];
 
 @NgModule({
