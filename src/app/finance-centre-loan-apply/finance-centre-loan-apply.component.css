@@ -8,21 +8,21 @@
 
 @font-face {
     font-family: "proximaregular";
-    src: url("./../../assets/fonts/proximaregular.woff") format("woff");
+    src: url("/assets/fonts/proximaregular.woff") format("woff");
     font-weight: normal;
     font-style: normal;
     }
 
 @font-face {
     font-family: "proximalight";
-    src: url("./../../assets/fonts/proximalight.woff") format("woff");
+    src: url("/assets/fonts/proximalight.woff") format("woff");
     font-weight: normal;
     font-style: normal;
     }
 
 @font-face {
     font-family: "proximathin";
-    src: url("./../../assets/fonts/proximathin.woff") format("woff");
+    src: url("/assets/fonts/proximathin.woff") format("woff");
     font-weight: normal;
     font-style: normal;
     }
@@ -132,7 +132,7 @@ a{
 .userprofile{
     height: 184px;
     width: 1000px;
-    background-image: url("./../../assets/icons/1x/Asset 2.png");
+    background-image: url("/assets/icons/1x/Asset 2.png");
     margin: 0px auto;
     margin-top: 50px;
     background-size: cover;
@@ -302,21 +302,21 @@ h1{
 
 @font-face {
     font-family: "proximaregular";
-    src: url("./../../assets/fonts/proximaregular.woff") format("woff");
+    src: url("/assets/fonts/proximaregular.woff") format("woff");
     font-weight: normal;
     font-style: normal;
     }
 
 @font-face {
     font-family: "proximalight";
-    src: url("./../../assets/fonts/proximalight.woff") format("woff");
+    src: url("/assets/fonts/proximalight.woff") format("woff");
     font-weight: normal;
     font-style: normal;
     }
 
 @font-face {
     font-family: "proximathin";
-    src: url("./../../assets/fonts/proximathin.woff") format("woff");
+    src: url("/assets/fonts/proximathin.woff") format("woff");
     font-weight: normal;
     font-style: normal;
     }
