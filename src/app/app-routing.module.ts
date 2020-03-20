@@ -22,6 +22,7 @@ import { FinanceCentreLoanProvidersComponent } from './finance-centre-loan-provi
 import { OnlinelearningCourseDetailReviewComponent } from './onlinelearning-course-detail-review/onlinelearning-course-detail-review.component';
 import { OnlinelearningHomeComponent } from './onlinelearning-home/onlinelearning-home.component';
 import { ArchiveJobsAlertComponent } from './archive-jobs-alert/archive-jobs-alert.component';
+import { ArchiveJobSearchComponent } from './archive-job-search/archive-job-search.component';
 
 
 const routes: Routes = [
@@ -47,7 +48,8 @@ const routes: Routes = [
   { path: 'loan-providers', component: FinanceCentreLoanProvidersComponent },
   { path: 'course-details', component: OnlinelearningCourseDetailReviewComponent },
   { path: 'online-learning-home', component: OnlinelearningHomeComponent },
-  { path: 'archive-job-alert', component: ArchiveJobsAlertComponent }
+  { path: 'archive-job-alert', component: ArchiveJobsAlertComponent },
+  { path: 'archive-job-search', component: ArchiveJobSearchComponent }
 ];
 
 @NgModule({
