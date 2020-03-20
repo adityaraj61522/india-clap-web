@@ -1,6 +1,15 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {
+  ReactiveFormsModule,
+  FormsModule,
+  FormGroup,
+  FormControl,
+  FormArray,
+  Validators,
+  FormBuilder,
+  ValidatorFn
+} from "@angular/forms";
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -23,6 +32,11 @@ import { BannerComponent } from './banner/banner.component';
 import { JobDescriptionComponent } from './job-description/job-description.component';
 import { ProfileShareAlertComponent } from './profile-share-alert/profile-share-alert.component';
 import { UploadResumeComponent } from './upload-resume/upload-resume.component';
+import { FinanceCentreLoanApplyComponent } from './finance-centre-loan-apply/finance-centre-loan-apply.component';
+import { FinanceCentreLoanProvidersComponent } from './finance-centre-loan-providers/finance-centre-loan-providers.component';
+import { OnlinelearningCourseDetailReviewComponent } from './onlinelearning-course-detail-review/onlinelearning-course-detail-review.component';
+import { OnlinelearningNavbarComponent } from './onlinelearning-navbar/onlinelearning-navbar.component';
+import { OnlinelearningHomeComponent } from './onlinelearning-home/onlinelearning-home.component';
 
 @NgModule({
   declarations: [
@@ -46,11 +60,17 @@ import { UploadResumeComponent } from './upload-resume/upload-resume.component';
     BannerComponent,
     JobDescriptionComponent,
     ProfileShareAlertComponent,
-    UploadResumeComponent
+    UploadResumeComponent,
+    FinanceCentreLoanApplyComponent,
+    FinanceCentreLoanProvidersComponent,
+    OnlinelearningCourseDetailReviewComponent,
+    OnlinelearningNavbarComponent,
+    OnlinelearningHomeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
