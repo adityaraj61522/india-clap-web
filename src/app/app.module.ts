@@ -39,6 +39,7 @@ import { OnlinelearningNavbarComponent } from './onlinelearning-navbar/onlinelea
 import { OnlinelearningHomeComponent } from './onlinelearning-home/onlinelearning-home.component';
 import { ArchiveJobsAlertComponent } from './archive-jobs-alert/archive-jobs-alert.component';
 import { ArchiveJobSearchComponent } from './archive-job-search/archive-job-search.component';
+import { AlertNoActiveJobComponent } from './alert-no-active-job/alert-no-active-job.component';
 
 @NgModule({
   declarations: [
@@ -69,7 +70,8 @@ import { ArchiveJobSearchComponent } from './archive-job-search/archive-job-sear
     OnlinelearningNavbarComponent,
     OnlinelearningHomeComponent,
     ArchiveJobsAlertComponent,
-    ArchiveJobSearchComponent
+    ArchiveJobSearchComponent,
+    AlertNoActiveJobComponent
   ],
   imports: [
     BrowserModule,
