@@ -1,0 +1,97 @@
+.header{
+    background-color: teal;
+    height: 63px;
+    color: white;
+    
+    display: flex;
+    
+    align-items: center;
+    padding-left: 30px;
+  }
+  h2{
+    font-size: 19px;
+    font-weight: normal;
+  
+  }
+  .card{
+      width: 1000px;
+  }
+  .card-img{
+      width: 100px;
+      float: left;
+  
+  }
+  #symbols{
+      float: right;
+      margin-top: 20px;
+      
+  }
+  #space{
+      padding-left: 10px;
+  }
+  h4{
+      color: teal;
+      font-size: 20px;
+      
+  }
+  a{
+      color: gray;
+  }
+  a:hover{
+      text-decoration: none;
+      color: gray;
+  
+  }
+  h3{
+    font-size: 15px;
+    color: teal;
+  }
+  .card{
+      border: none;
+  }
+  .place{
+      border: 1px gray solid;
+      padding-left: 20px;
+      padding-right: 30px;
+  }
+  h5{
+    font-weight: normal;
+    color: #A9A9A9
+  ;
+    font-size: 15px;
+  }
+  #des1{  /*All descriptions */
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: lightgray;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+  }
+  .apply{
+    background-color: teal;
+    margin-bottom: 30px;
+  }
+  .left{
+    float: left;
+  }
+  .vid-img{
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+
+ 
+
+@media (min-width: 406px) {
+    #crdtxt{
+        padding-left: 27%;
+    }
+}
+
+@media (min-width: 1200px) {
+    #crdtxt{
+        padding-left: 13%;
+    }
+}

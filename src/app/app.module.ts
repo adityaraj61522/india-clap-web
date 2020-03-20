@@ -29,6 +29,9 @@ import { InstantApplySearchComponent } from './instant-apply-search/instant-appl
 import { FavSaveApplyComponent } from './fav-save-apply/fav-save-apply.component';
 import { SelectAllApplyComponent } from './select-all-apply/select-all-apply.component';
 import { BannerComponent } from './banner/banner.component';
+import { JobDescriptionComponent } from './job-description/job-description.component';
+import { ProfileShareAlertComponent } from './profile-share-alert/profile-share-alert.component';
+import { UploadResumeComponent } from './upload-resume/upload-resume.component';
 import { FinanceCentreLoanApplyComponent } from './finance-centre-loan-apply/finance-centre-loan-apply.component';
 import { FinanceCentreLoanProvidersComponent } from './finance-centre-loan-providers/finance-centre-loan-providers.component';
 import { OnlinelearningCourseDetailReviewComponent } from './onlinelearning-course-detail-review/onlinelearning-course-detail-review.component';
@@ -55,6 +58,9 @@ import { OnlinelearningHomeComponent } from './onlinelearning-home/onlinelearnin
     FavSaveApplyComponent,
     SelectAllApplyComponent,
     BannerComponent,
+    JobDescriptionComponent,
+    ProfileShareAlertComponent,
+    UploadResumeComponent,
     FinanceCentreLoanApplyComponent,
     FinanceCentreLoanProvidersComponent,
     OnlinelearningCourseDetailReviewComponent,

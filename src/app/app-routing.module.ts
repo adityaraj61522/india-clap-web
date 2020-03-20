@@ -15,6 +15,8 @@ import { VariousSectorsJobsFiltersComponent } from './various-sectors-jobs-filte
 import { InstantApplySearchComponent } from './instant-apply-search/instant-apply-search.component';
 import { FavSaveApplyComponent } from './fav-save-apply/fav-save-apply.component';
 import { SelectAllApplyComponent } from './select-all-apply/select-all-apply.component';
+import { JobDescriptionComponent } from './job-description/job-description.component';
+import { UploadResumeComponent } from './upload-resume/upload-resume.component';
 import { FinanceCentreLoanApplyComponent } from './finance-centre-loan-apply/finance-centre-loan-apply.component';
 import { FinanceCentreLoanProvidersComponent } from './finance-centre-loan-providers/finance-centre-loan-providers.component';
 import { OnlinelearningCourseDetailReviewComponent } from './onlinelearning-course-detail-review/onlinelearning-course-detail-review.component';
@@ -38,6 +40,8 @@ const routes: Routes = [
   { path: 'instant-apply-search', component: InstantApplySearchComponent },
   { path: 'fav-save-apply', component: FavSaveApplyComponent },
   { path: 'select-all-apply', component: SelectAllApplyComponent },
+  { path: 'job-description', component: JobDescriptionComponent },
+  { path: 'upload-resume', component: UploadResumeComponent },
   { path: 'apply-micro-loan' , component: FinanceCentreLoanApplyComponent},
   { path: 'loan-providers', component:FinanceCentreLoanProvidersComponent},
   { path: 'course-details', component:OnlinelearningCourseDetailReviewComponent},
