@@ -12,10 +12,11 @@ import { SomeoneElseProfileComponent } from './someone-else-profile/someone-else
 import { NotificationDropdownComponent } from './notification-dropdown/notification-dropdown.component';
 import { AcceptDeclineRequestComponent } from './accept-decline-request/accept-decline-request.component';
 import { MyProfileDropdownComponent } from './my-profile-dropdown/my-profile-dropdown.component';
+import { TimelineLikeReactComponent } from './timeline-like-react/timeline-like-react.component';
 
 
 @NgModule({
-  declarations: [ProfessionalNetworkingComponent, HomePageComponent, LoginPageComponent, RegistrationPageComponent, ForgotPasswordPageComponent, ResetPasswordPageComponent, SomeoneElseProfileComponent, NotificationDropdownComponent, AcceptDeclineRequestComponent, MyProfileDropdownComponent],
+  declarations: [ProfessionalNetworkingComponent, HomePageComponent, LoginPageComponent, RegistrationPageComponent, ForgotPasswordPageComponent, ResetPasswordPageComponent, SomeoneElseProfileComponent, NotificationDropdownComponent, AcceptDeclineRequestComponent, MyProfileDropdownComponent, TimelineLikeReactComponent],
   imports: [
     CommonModule,
     ProfessionalNetworkingRoutingModule
