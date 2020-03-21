@@ -3,10 +3,11 @@ import { CommonModule } from '@angular/common';
 
 import { ProfessionalNetworkingRoutingModule } from './professional-networking-routing.module';
 import { ProfessionalNetworkingComponent } from './professional-networking.component';
+import { HomePageComponent } from './home-page/home-page.component';
 
 
 @NgModule({
-  declarations: [ProfessionalNetworkingComponent],
+  declarations: [ProfessionalNetworkingComponent, HomePageComponent],
   imports: [
     CommonModule,
     ProfessionalNetworkingRoutingModule
