@@ -22,7 +22,7 @@ import { ArchiveJobsAlertComponent } from './archive-jobs-alert/archive-jobs-ale
 import { ArchiveJobSearchComponent } from './archive-job-search/archive-job-search.component';
 
 const routes: Routes = [
-  { path: 'take-test', component: SkillTestComponent },
+  { path: '', component: SkillTestComponent },
   { path: 'saved-jobs', component: SavedJobsComponent },
   { path: 'applied-jobs', component: AppliedJobsComponent },
   { path: 'post-job', component: PostJobComponent },
