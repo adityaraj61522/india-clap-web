@@ -49,7 +49,8 @@ const routes: Routes = [
   { path: 'course-details', component: OnlinelearningCourseDetailReviewComponent },
   { path: 'online-learning-home', component: OnlinelearningHomeComponent },
   { path: 'archive-job-alert', component: ArchiveJobsAlertComponent },
-  { path: 'archive-job-search', component: ArchiveJobSearchComponent }
+  { path: 'archive-job-search', component: ArchiveJobSearchComponent },
+  { path: 'jobs', loadChildren: () => import('./jobs/jobs.module').then(m => m.JobsModule) }
 ];
 
 @NgModule({
