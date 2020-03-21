@@ -40,6 +40,8 @@ import { OnlinelearningHomeComponent } from './onlinelearning-home/onlinelearnin
 import { ArchiveJobsAlertComponent } from './archive-jobs-alert/archive-jobs-alert.component';
 import { ArchiveJobSearchComponent } from './archive-job-search/archive-job-search.component';
 import { AlertNoActiveJobComponent } from './alert-no-active-job/alert-no-active-job.component';
+import { RegisterSkilledCoursesComponent } from './register-skilled-courses/register-skilled-courses.component';
+import { SkillCoursesResultsComponent } from './skill-courses-results/skill-courses-results.component';
 
 @NgModule({
   declarations: [
@@ -71,12 +73,17 @@ import { AlertNoActiveJobComponent } from './alert-no-active-job/alert-no-active
     OnlinelearningHomeComponent,
     ArchiveJobsAlertComponent,
     ArchiveJobSearchComponent,
-    AlertNoActiveJobComponent
+    AlertNoActiveJobComponent,
+    RegisterSkilledCoursesComponent,
+    SkillCoursesResultsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    // FormGroup,
+    // FormControl,
+     ReactiveFormsModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

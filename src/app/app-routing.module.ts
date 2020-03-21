@@ -23,6 +23,8 @@ import { OnlinelearningCourseDetailReviewComponent } from './onlinelearning-cour
 import { OnlinelearningHomeComponent } from './onlinelearning-home/onlinelearning-home.component';
 import { ArchiveJobsAlertComponent } from './archive-jobs-alert/archive-jobs-alert.component';
 import { ArchiveJobSearchComponent } from './archive-job-search/archive-job-search.component';
+import { RegisterSkilledCoursesComponent } from './register-skilled-courses/register-skilled-courses.component';
+import { SkillCoursesResultsComponent } from './skill-courses-results/skill-courses-results.component';
 
 
 const routes: Routes = [
@@ -44,12 +46,14 @@ const routes: Routes = [
   { path: 'select-all-apply', component: SelectAllApplyComponent },
   { path: 'job-description', component: JobDescriptionComponent },
   { path: 'upload-resume', component: UploadResumeComponent },
-  { path: 'apply-micro-loan', component: FinanceCentreLoanApplyComponent },
-  { path: 'loan-providers', component: FinanceCentreLoanProvidersComponent },
-  { path: 'course-details', component: OnlinelearningCourseDetailReviewComponent },
-  { path: 'online-learning-home', component: OnlinelearningHomeComponent },
   { path: 'archive-job-alert', component: ArchiveJobsAlertComponent },
-  { path: 'archive-job-search', component: ArchiveJobSearchComponent }
+  { path: 'archive-job-search', component: ArchiveJobSearchComponent },
+  { path: 'apply-micro-loan' , component: FinanceCentreLoanApplyComponent},
+  { path: 'loan-providers', component:FinanceCentreLoanProvidersComponent},
+  { path: 'course-details', component:OnlinelearningCourseDetailReviewComponent},
+  { path: 'online-learning-home' , component:OnlinelearningHomeComponent},
+  { path : 'skilled-courses-registration',component:RegisterSkilledCoursesComponent},
+  { path : 'skilled-courses-results' , component:SkillCoursesResultsComponent}
 ];
 
 @NgModule({
