@@ -10,10 +10,11 @@ import { ForgotPasswordPageComponent } from './forgot-password-page/forgot-passw
 import { ResetPasswordPageComponent } from './reset-password-page/reset-password-page.component';
 import { SomeoneElseProfileComponent } from './someone-else-profile/someone-else-profile.component';
 import { NotificationDropdownComponent } from './notification-dropdown/notification-dropdown.component';
+import { AcceptDeclineRequestComponent } from './accept-decline-request/accept-decline-request.component';
 
 
 @NgModule({
-  declarations: [ProfessionalNetworkingComponent, HomePageComponent, LoginPageComponent, RegistrationPageComponent, ForgotPasswordPageComponent, ResetPasswordPageComponent, SomeoneElseProfileComponent, NotificationDropdownComponent],
+  declarations: [ProfessionalNetworkingComponent, HomePageComponent, LoginPageComponent, RegistrationPageComponent, ForgotPasswordPageComponent, ResetPasswordPageComponent, SomeoneElseProfileComponent, NotificationDropdownComponent, AcceptDeclineRequestComponent],
   imports: [
     CommonModule,
     ProfessionalNetworkingRoutingModule
