@@ -8,10 +8,11 @@ import { LoginPageComponent } from './login-page/login-page.component';
 import { RegistrationPageComponent } from './registration-page/registration-page.component';
 import { ForgotPasswordPageComponent } from './forgot-password-page/forgot-password-page.component';
 import { ResetPasswordPageComponent } from './reset-password-page/reset-password-page.component';
+import { SomeoneElseProfileComponent } from './someone-else-profile/someone-else-profile.component';
 
 
 @NgModule({
-  declarations: [ProfessionalNetworkingComponent, HomePageComponent, LoginPageComponent, RegistrationPageComponent, ForgotPasswordPageComponent, ResetPasswordPageComponent],
+  declarations: [ProfessionalNetworkingComponent, HomePageComponent, LoginPageComponent, RegistrationPageComponent, ForgotPasswordPageComponent, ResetPasswordPageComponent, SomeoneElseProfileComponent],
   imports: [
     CommonModule,
     ProfessionalNetworkingRoutingModule
