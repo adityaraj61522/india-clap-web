@@ -1,5 +1,6 @@
 <div class="container">
     <div class="mainbody">
+      <form  [formGroup]='testForm'>
       <div class="header">
         <h2>Take a holographic skill test and enhance your ability</h2>
       </div>
@@ -7,26 +8,30 @@
       <h3>Name of Test</h3>
       <div >
         
-        <input class="form-control" id="frm2"   placeholder="Abc Exam, XYZ test">
-      </div>
+        <input class="form-control" id="frm2"   placeholder="Abc Exam, XYZ test"  formControlName="test_name"
+        [ngClass]="{'is-invalid':testForm.get('test_name').touched && testForm.get('test_name').invalid}">
+        <div class="invalid-feedback">
+          <p class="error">This field is required</p>
+       </div>      </div>
       <h3>Level of test</h3>
       <div id="lvl">        
         <div class="form-check">
         <label class="form-check-label" for="materialChecked2">Easy</label>
-        <input type="radio"  id="checked" name="materialExample2" >
+        <input type="radio" checked (change)="checkboxValidation(1)" id="checked" name="materialExample2" >
       </div>
       <div class="form-check">
         <label class="form-check-label" for="materialChecked2">Intermediate</label>
-        <input type="radio"  id="checked" name="materialExample2" >
+        <input type="radio" (change)="checkboxValidation(2)"  id="checked" name="materialExample2" >
       </div>
       <div class="form-check">
         <label class="form-check-label" for="materialChecked2">Advanced</label>
-        <input type="radio"  id="checked" name="materialExample2" >
+        <input type="radio" (change)="checkboxValidation(3)" id="checked" name="materialExample2" >
       </div>
     </div>
-    <button class="btn btn-default btnplc" type="submit">
+    <button class="btn btn-default btnplc" type="submit" (click)="submit()">
       <i class="glyphicon glyphicon-search " ><img src="/assets/icons/1x/button.png" width="50px" ></i>
     </button>
     </div>
+  </form>
     </div>
   </div>
