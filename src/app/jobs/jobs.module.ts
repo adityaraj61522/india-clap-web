@@ -24,6 +24,8 @@ import { ProfileShareAlertComponent } from './profile-share-alert/profile-share-
 import { JobPostingsComponent } from './job-postings/job-postings.component';
 import { InstantApplySearchComponent } from './instant-apply-search/instant-apply-search.component';
 import { FavSaveApplyComponent } from './fav-save-apply/fav-save-apply.component';
+import { BannerComponent } from './banner/banner.component';
+
 
 
 @NgModule({
@@ -51,10 +53,11 @@ import { FavSaveApplyComponent } from './fav-save-apply/fav-save-apply.component
     JobPostingsComponent,
     InstantApplySearchComponent,
     FavSaveApplyComponent,
+    BannerComponent
   ],
   imports: [
     CommonModule,
-    JobsRoutingModule
+    JobsRoutingModule,
   ]
 })
 export class JobsModule { }

@@ -20,27 +20,33 @@ import { JobDescriptionComponent } from './job-description/job-description.compo
 import { UploadResumeComponent } from './upload-resume/upload-resume.component';
 import { ArchiveJobsAlertComponent } from './archive-jobs-alert/archive-jobs-alert.component';
 import { ArchiveJobSearchComponent } from './archive-job-search/archive-job-search.component';
+import { JobsComponent } from './jobs.component';
 
 const routes: Routes = [
-  { path: '', component: SkillTestComponent },
-  { path: 'saved-jobs', component: SavedJobsComponent },
-  { path: 'applied-jobs', component: AppliedJobsComponent },
-  { path: 'post-job', component: PostJobComponent },
-  { path: 'job-postings', component: JobPostingsComponent },
-  { path: 'edit-jobs', component: JobPostEditComponent },
-  { path: 'view-candidates', component: ViewCandidatesComponent },
-  { path: 'view-shortlisted', component: ViewShortlistTabComponent },
-  { path: 'user-account', component: UserAccountComponent },
-  { path: 'jobs-card', component: JobCardComponent },
-  { path: 'various-sectors', component: VariousSectorsJobsComponent },
-  { path: 'various-jobs-filters', component: VariousSectorsJobsFiltersComponent },
-  { path: 'instant-apply-search', component: InstantApplySearchComponent },
-  { path: 'fav-save-apply', component: FavSaveApplyComponent },
-  { path: 'select-all-apply', component: SelectAllApplyComponent },
-  { path: 'job-description', component: JobDescriptionComponent },
-  { path: 'upload-resume', component: UploadResumeComponent },
-  { path: 'archive-job-alert', component: ArchiveJobsAlertComponent },
-  { path: 'archive-job-search', component: ArchiveJobSearchComponent },
+  {
+    path: 'jobs',
+    component: JobsComponent,
+    children: [
+      { path: 'saved-jobs', component: SavedJobsComponent },
+      { path: 'applied-jobs', component: AppliedJobsComponent },
+      { path: 'post-job', component: PostJobComponent },
+      { path: 'job-postings', component: JobPostingsComponent },
+      { path: 'edit-jobs', component: JobPostEditComponent },
+      { path: 'view-candidates', component: ViewCandidatesComponent },
+      { path: 'view-shortlisted', component: ViewShortlistTabComponent },
+      { path: 'user-account', component: UserAccountComponent },
+      { path: 'jobs-card', component: JobCardComponent },
+      { path: 'various-sectors', component: VariousSectorsJobsComponent },
+      { path: 'various-jobs-filters', component: VariousSectorsJobsFiltersComponent },
+      { path: 'instant-apply-search', component: InstantApplySearchComponent },
+      { path: 'fav-save-apply', component: FavSaveApplyComponent },
+      { path: 'select-all-apply', component: SelectAllApplyComponent },
+      { path: 'job-description', component: JobDescriptionComponent },
+      { path: 'upload-resume', component: UploadResumeComponent },
+      { path: 'archive-job-alert', component: ArchiveJobsAlertComponent },
+      { path: 'archive-job-search', component: ArchiveJobSearchComponent },
+    ]
+  },
 ];
 
 @NgModule({

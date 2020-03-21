@@ -12,30 +12,30 @@ import {
 } from "@angular/forms";
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
 import { FinanceCentreLoanApplyComponent } from './finance-centre-loan-apply/finance-centre-loan-apply.component';
 import { FinanceCentreLoanProvidersComponent } from './finance-centre-loan-providers/finance-centre-loan-providers.component';
 import { OnlinelearningCourseDetailReviewComponent } from './onlinelearning-course-detail-review/onlinelearning-course-detail-review.component';
 import { OnlinelearningNavbarComponent } from './onlinelearning-navbar/onlinelearning-navbar.component';
 import { OnlinelearningHomeComponent } from './onlinelearning-home/onlinelearning-home.component';
-import { BannerComponent } from './banner/banner.component';
 
+import { SharedModule } from './shared/shared.module';
+import { LayoutModule } from './layout/layout.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
     FinanceCentreLoanApplyComponent,
     FinanceCentreLoanProvidersComponent,
     OnlinelearningCourseDetailReviewComponent,
     OnlinelearningNavbarComponent,
-    OnlinelearningHomeComponent,
-    BannerComponent
+    OnlinelearningHomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    SharedModule,
+    LayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,64 @@
+#place{
+    text-align: center;
+    margin-top: 10%;
+  }
+  #form{
+    
+    width: 400px;
+    margin: auto;
+    margin-top: 30px;
+    
+  }
+  .form-control{
+    margin-bottom: 15px;
+    background-color: #DCDCDC;
+  }
+  .btn{
+    width: 400px;
+    background-color: teal;
+    border-color: teal;
+  }
+  .pass_show{position: relative} 
+
+  .pass_show .ptxt { 
+
+  position: absolute; 
+
+  top: 50%; 
+
+  right: 10px; 
+
+  z-index: 1; 
+
+  color: teal; 
+
+  margin-top: -10px; 
+
+  cursor: pointer; 
+
+  transition: .3s ease all; 
+
+} 
+h1, h2{
+color: teal;
+}
+.txt{
+color: gray;
+}
+#forpass{
+font-size: 12px;
+}
+#forgot_password_text{
+    cursor: pointer;
+}
+#forgot_password_text:hover{
+    color: teal;
+    text-decoration: underline;
+}
+.space{
+margin-left: 140px;
+}
+a{
+color: teal;
+font-weight: bolder;
+}

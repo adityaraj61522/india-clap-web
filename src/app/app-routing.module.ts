@@ -5,16 +5,19 @@ import { FinanceCentreLoanProvidersComponent } from './finance-centre-loan-provi
 import { OnlinelearningCourseDetailReviewComponent } from './onlinelearning-course-detail-review/onlinelearning-course-detail-review.component';
 import { OnlinelearningHomeComponent } from './onlinelearning-home/onlinelearning-home.component';
 
+import { HomeComponent } from './home/home.component'
+import { LayoutComponent } from './layout/layout/layout.component';
 
 
 const routes: Routes = [
-  { path: '', redirectTo: '', pathMatch: 'full' },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '', component: LayoutComponent, loadChildren: () => import('./home/home.module').then(m => m.HomeModule) },
+  { path: 'professional-networking', loadChildren: () => import('./professional-networking/professional-networking.module').then(m => m.ProfessionalNetworkingModule) },
   { path: 'jobs', loadChildren: () => import('./jobs/jobs.module').then(m => m.JobsModule) },
   { path: 'apply-micro-loan', component: FinanceCentreLoanApplyComponent },
   { path: 'loan-providers', component: FinanceCentreLoanProvidersComponent },
   { path: 'course-details', component: OnlinelearningCourseDetailReviewComponent },
   { path: 'online-learning-home', component: OnlinelearningHomeComponent },
-  { path: 'professional-networking', loadChildren: () => import('./professional-networking/professional-networking.module').then(m => m.ProfessionalNetworkingModule) },
 ];
 
 @NgModule({

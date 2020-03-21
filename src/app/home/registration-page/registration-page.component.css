@@ -1,0 +1,65 @@
+#place{
+    text-align: center;
+  }
+  #form{
+    
+    width: 400px;
+    margin: auto;
+    text-align: left !important;
+    
+  }
+  .form-control{
+    margin-bottom: 15px;
+    background-color: #DCDCDC
+;
+  }
+  .btn{
+    width: 400px;
+    background-color: teal;
+    border-color: teal;
+  }
+  
+h1, h2{
+color: teal;
+}
+h3{
+font-size: 15px;
+}
+.txt{
+color: gray;
+}
+#forpass{
+font-size: 12px;
+}
+.space{
+margin-left: 140px;
+}
+a{
+color: teal;
+font-weight: bolder;
+}
+.left{ /*for first and last name*/
+float: left;
+width: 200px;
+}
+.password{
+margin-bottom: 0 !important;
+}
+.agreement{
+font-size: 13px;
+color: gray;
+text-align: left !important;
+width: 400px;
+margin: auto;
+margin-bottom: 10px;
+}
+h3{
+color: teal;
+}
+#forgot_password_text{
+    cursor: pointer;
+}
+#forgot_password_text:hover{
+    color: teal;
+    text-decoration: underline;
+}

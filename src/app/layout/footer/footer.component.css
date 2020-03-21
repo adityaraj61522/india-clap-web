@@ -1,0 +1,16 @@
+.footer {
+    position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: white;
+   color: teal;
+   text-align: center;
+   padding-bottom: 30px;
+   }
+
+   @media(min-width: 1207px){
+    .footer{
+        font-size: 15px;
+    }
+}
