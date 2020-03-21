@@ -26,6 +26,8 @@ import { InstantApplySearchComponent } from './instant-apply-search/instant-appl
 import { FavSaveApplyComponent } from './fav-save-apply/fav-save-apply.component';
 import { BannerComponent } from './banner/banner.component';
 
+import {SharedModule} from '../shared/shared.module';
+
 
 
 @NgModule({
@@ -58,6 +60,7 @@ import { BannerComponent } from './banner/banner.component';
   imports: [
     CommonModule,
     JobsRoutingModule,
+    SharedModule
   ]
 })
 export class JobsModule { }

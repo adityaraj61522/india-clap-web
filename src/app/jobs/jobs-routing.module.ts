@@ -24,7 +24,7 @@ import { JobsComponent } from './jobs.component';
 
 const routes: Routes = [
   {
-    path: 'jobs',
+    path: '',
     component: JobsComponent,
     children: [
       { path: 'saved-jobs', component: SavedJobsComponent },
