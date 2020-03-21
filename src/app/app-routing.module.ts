@@ -14,6 +14,7 @@ const routes: Routes = [
   { path: 'loan-providers', component: FinanceCentreLoanProvidersComponent },
   { path: 'course-details', component: OnlinelearningCourseDetailReviewComponent },
   { path: 'online-learning-home', component: OnlinelearningHomeComponent },
+  { path: 'professional-networking', loadChildren: () => import('./professional-networking/professional-networking.module').then(m => m.ProfessionalNetworkingModule) },
 ];
 
 @NgModule({
