@@ -13,7 +13,8 @@ import { SomeoneElseProfileComponent } from './someone-else-profile/someone-else
 import { TimelineLikeReactComponent } from './timeline-like-react/timeline-like-react.component';
 import { SharedModule } from '../shared/shared.module';
 import { TimelineCommentComponent } from './timeline-comment/timeline-comment.component';
-import { TimelineReactEmojiComponent } from './timeline-react-emoji/timeline-react-emoji.component'
+import { TimelineReactEmojiComponent } from './timeline-react-emoji/timeline-react-emoji.component';
+import { MyProfileEditableComponent } from './my-profile-editable/my-profile-editable.component'
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { TimelineReactEmojiComponent } from './timeline-react-emoji/timeline-rea
     SomeoneElseProfileComponent,
     TimelineLikeReactComponent,
     TimelineCommentComponent,
-    TimelineReactEmojiComponent
+    TimelineReactEmojiComponent,
+    MyProfileEditableComponent
   ],
   imports: [
     CommonModule,
