@@ -1,0 +1,74 @@
+<div class="mainbody">
+    <div class="header">
+        <h2>Search for jobs</h2>
+        <div id="button">
+            <button type="submit" class="btn btn-primary hbtn">Instant Apply</button>
+
+        </div>
+        <div id="filter">
+            <button type="button" class="btn ">
+
+                <img src="/assets/icons/1x/Filter.png" alt="" width="22" height="25">
+
+            </button>
+        </div>
+    </div>
+    <div class="place">
+        <form [formGroup]='instantApplyForm'>
+        <h3>Name or type of the job</h3>
+        <div>
+
+            <input class="form-control" id="frm2" placeholder="Engineer, Graphic Designer, Mechanic"  formControlName="job_name"
+            [ngClass]="{'is-invalid':instantApplyForm.get('job_name').touched && instantApplyForm.get('job_name').invalid}">
+            <div class="invalid-feedback">
+                <p class="error">This field is required</p>
+             </div> 
+        </div>
+        <h3>State</h3>
+        <div>
+
+            <input class="form-control" id="frm2" placeholder="West Bengal, Haryana etc" formControlName="job_state"
+            [ngClass]="{'is-invalid':instantApplyForm.get('job_state').touched && instantApplyForm.get('job_state').invalid}">
+            <div class="invalid-feedback">
+                <p class="error">This field is required</p>
+             </div> 
+        </div>
+        <h3>District</h3>
+        <div>
+
+            <input class="form-control" id="frm2" placeholder="North 24  paragona, etc" formControlName="job_district"
+            [ngClass]="{'is-invalid':instantApplyForm.get('job_district').touched && instantApplyForm.get('job_district').invalid}">
+            <div class="invalid-feedback">
+                <p class="error">This field is required</p>
+             </div> 
+        </div>
+        <div id="from">
+
+            <h3>From</h3>
+
+            <input class="form-control" id="frm3" placeholder="26-07-2019" formControlName="job_from"
+            [ngClass]="{'is-invalid':instantApplyForm.get('job_from').touched && instantApplyForm.get('job_from').invalid}">
+            <div class="invalid-feedback">
+                <p class="error">This field is required</p>
+             </div> 
+
+
+        </div>
+        <div id="to">
+            <h3>To</h3>
+            <input class="form-control" id="frm4" placeholder="28-07-2019" formControlName="job_to"
+            [ngClass]="{'is-invalid':instantApplyForm.get('job_to').touched && instantApplyForm.get('job_to').invalid}">
+            <div class="invalid-feedback">
+                <p class="error">This field is required</p>
+             </div> 
+        </div>
+
+
+
+
+        <button class="btn btn-default btnplc" type="submit" (click)="submit()">
+            <i class="glyphicon glyphicon-search "><img src="/assets/icons/1x/button.png" width="50px"></i>
+        </button>
+    </form>
+    </div>
+</div>

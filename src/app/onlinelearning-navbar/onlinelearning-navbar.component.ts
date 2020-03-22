@@ -14,12 +14,12 @@ export class OnlinelearningNavbarComponent implements OnInit {
   ngOnInit() {
 
     this.router.events.subscribe((res:any)=>{
-      //  console.log("hello")
+        console.log("hello")
         if( res instanceof NavigationEnd){
           //console.log(this.router.url)
-          if(this.router.url.indexOf('/course-details')> -1||this.router.url.indexOf('/online-learning-home')> -1)
+          if(this.router.url.indexOf('/online-learning/course-detail')> -1||this.router.url.indexOf('/online-learning/home')> -1)
           {
-           // console.log(this.router.routerState)
+            console.log(this.router.routerState)
             this.showLearningHeader=true;
           }
           else{
