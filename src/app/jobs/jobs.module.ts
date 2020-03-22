@@ -27,6 +27,7 @@ import { FavSaveApplyComponent } from './fav-save-apply/fav-save-apply.component
 import { BannerComponent } from './banner/banner.component';
 
 import {SharedModule} from '../shared/shared.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -60,7 +61,9 @@ import {SharedModule} from '../shared/shared.module';
   imports: [
     CommonModule,
     JobsRoutingModule,
-    SharedModule
+    SharedModule,
+    FormsModule,
+     ReactiveFormsModule,
   ]
 })
 export class JobsModule { }

@@ -3,23 +3,33 @@
         <div class="header">
             <h2>Take a holographic skill test and enhance your ability</h2>
         </div>
+        <form [formGroup]='archiveJobSearchForm'>
         <div class="place">
             <h3>Time period</h3>
             <div>
 
-                <input class="form-control" id="frm2" placeholder="1 month, 5 month, etc">
+                <input class="form-control" id="frm2" placeholder="1 month, 5 month, etc"  formControlName="job_time"
+                [ngClass]="{'is-invalid':archiveJobSearchForm.get('job_time').touched && archiveJobSearchForm.get('job_time').invalid}">
+                <div class="invalid-feedback">
+                    <p class="error">This field is required</p>
+                 </div> 
             </div>
             <h3>Name or type of job</h3>
             <div>
 
-                <input class="form-control" id="frm2" placeholder="Mechanic, designer, etc">
+                <input class="form-control" id="frm2" placeholder="Mechanic, designer, etc"  formControlName="job_type"
+                [ngClass]="{'is-invalid':archiveJobSearchForm.get('job_type').touched && archiveJobSearchForm.get('job_type').invalid}">
+                <div class="invalid-feedback">
+                    <p class="error">This field is required</p>
+                 </div> 
             </div>
 
 
 
-            <button class="btn btn-default btnplc" type="submit">
+            <button class="btn btn-default btnplc" type="submit" (click)="submit()">
                 <i class="glyphicon glyphicon-search "><img src="/assets/icons/1x/button.png" width="50px"></i>
             </button>
         </div>
+        </form>
     </div>
 </div>
