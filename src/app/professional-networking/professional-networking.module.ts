@@ -12,7 +12,8 @@ import { ResetPasswordPageComponent } from './reset-password-page/reset-password
 import { SomeoneElseProfileComponent } from './someone-else-profile/someone-else-profile.component';
 import { TimelineLikeReactComponent } from './timeline-like-react/timeline-like-react.component';
 import { SharedModule } from '../shared/shared.module';
-import { TimelineCommentComponent } from './timeline-comment/timeline-comment.component'
+import { TimelineCommentComponent } from './timeline-comment/timeline-comment.component';
+import { TimelineReactEmojiComponent } from './timeline-react-emoji/timeline-react-emoji.component'
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { TimelineCommentComponent } from './timeline-comment/timeline-comment.co
     ResetPasswordPageComponent,
     SomeoneElseProfileComponent,
     TimelineLikeReactComponent,
-    TimelineCommentComponent
+    TimelineCommentComponent,
+    TimelineReactEmojiComponent
   ],
   imports: [
     CommonModule,
