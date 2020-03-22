@@ -7,19 +7,20 @@ import { FinanceCentreLoanApplyComponent } from './finance-centre-loan-apply/fin
 import { FinanceCentreLoanProvidersComponent } from './finance-centre-loan-providers/finance-centre-loan-providers.component';
 import { SharedModule } from '../shared/shared.module';
 import { FormsModule } from '@angular/forms';
-import { BannerComponent } from '../jobs/banner/banner.component';
 
 
 @NgModule({
-  declarations: [FinanceCenterComponent,
+  declarations: [
+    FinanceCenterComponent,
     FinanceCentreLoanApplyComponent,
-    FinanceCentreLoanProvidersComponent,BannerComponent],
+    FinanceCentreLoanProvidersComponent
+  ],
   imports: [
     CommonModule,
     FinanceCenterRoutingModule,
     SharedModule,
     FormsModule
-    
+
   ]
 })
 export class FinanceCenterModule { }

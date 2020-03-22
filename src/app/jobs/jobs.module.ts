@@ -24,9 +24,8 @@ import { ProfileShareAlertComponent } from './profile-share-alert/profile-share-
 import { JobPostingsComponent } from './job-postings/job-postings.component';
 import { InstantApplySearchComponent } from './instant-apply-search/instant-apply-search.component';
 import { FavSaveApplyComponent } from './fav-save-apply/fav-save-apply.component';
-import { BannerComponent } from './banner/banner.component';
 
-import {SharedModule} from '../shared/shared.module';
+import { SharedModule } from '../shared/shared.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
@@ -55,15 +54,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ProfileShareAlertComponent,
     JobPostingsComponent,
     InstantApplySearchComponent,
-    FavSaveApplyComponent,
-    BannerComponent
+    FavSaveApplyComponent
   ],
   imports: [
     CommonModule,
     JobsRoutingModule,
     SharedModule,
     FormsModule,
-     ReactiveFormsModule,
+    ReactiveFormsModule,
   ]
 })
 export class JobsModule { }

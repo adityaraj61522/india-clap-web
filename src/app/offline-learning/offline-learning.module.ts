@@ -6,14 +6,14 @@ import { OfflineLearningComponent } from './offline-learning.component';
 import { SkillCoursesResultsComponent } from './skill-courses-results/skill-courses-results.component';
 import { RegisterSkilledCoursesComponent } from './register-skilled-courses/register-skilled-courses.component';
 import { SharedModule } from '../shared/shared.module';
-import { BannerComponent } from '../jobs/banner/banner.component';
 
 
 @NgModule({
-  declarations: [OfflineLearningComponent,
+  declarations: [
+    OfflineLearningComponent,
     RegisterSkilledCoursesComponent,
     SkillCoursesResultsComponent,
-    BannerComponent],
+  ],
   imports: [
     CommonModule,
     OfflineLearningRoutingModule,
