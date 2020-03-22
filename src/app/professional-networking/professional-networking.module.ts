@@ -11,7 +11,8 @@ import { NotificationDropdownComponent } from './notification-dropdown/notificat
 import { ResetPasswordPageComponent } from './reset-password-page/reset-password-page.component';
 import { SomeoneElseProfileComponent } from './someone-else-profile/someone-else-profile.component';
 import { TimelineLikeReactComponent } from './timeline-like-react/timeline-like-react.component';
-import { SharedModule } from '../shared/shared.module'
+import { SharedModule } from '../shared/shared.module';
+import { TimelineCommentComponent } from './timeline-comment/timeline-comment.component'
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { SharedModule } from '../shared/shared.module'
     NotificationDropdownComponent,
     ResetPasswordPageComponent,
     SomeoneElseProfileComponent,
-    TimelineLikeReactComponent
+    TimelineLikeReactComponent,
+    TimelineCommentComponent
   ],
   imports: [
     CommonModule,

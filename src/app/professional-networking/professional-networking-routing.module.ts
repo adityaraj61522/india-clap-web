@@ -5,6 +5,8 @@ import { ProfessionalNetworkingComponent } from './professional-networking.compo
 import { SomeoneElseProfileComponent } from './someone-else-profile/someone-else-profile.component';
 import { MyProfileDropdownComponent } from './my-profile-dropdown/my-profile-dropdown.component';
 import { TimelineLikeReactComponent } from './timeline-like-react/timeline-like-react.component';
+import { NotificationDropdownComponent } from './notification-dropdown/notification-dropdown.component';
+import { TimelineCommentComponent } from './timeline-comment/timeline-comment.component';
 
 const routes: Routes = [
   {
@@ -12,7 +14,9 @@ const routes: Routes = [
     children: [
       { path: 'profiles', component: SomeoneElseProfileComponent },
       { path: 'my-profile', component: MyProfileDropdownComponent },
-      { path: 'timeline-like-react', component: TimelineLikeReactComponent }
+      { path: 'timeline-like-react', component: TimelineLikeReactComponent },
+      { path: 'notification-dropdown', component: NotificationDropdownComponent },
+      { path: 'timeline-comment', component: TimelineCommentComponent }
     ]
   },
 ];
