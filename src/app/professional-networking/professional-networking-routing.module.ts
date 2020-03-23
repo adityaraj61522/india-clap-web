@@ -11,6 +11,7 @@ import { TimelineReactEmojiComponent } from './timeline-react-emoji/timeline-rea
 import { MyProfileEditableComponent } from './my-profile-editable/my-profile-editable.component';
 import { PrivacySettingsComponent } from './privacy-settings/privacy-settings.component';
 import { CompanyManagementComponent } from './company-management/company-management.component';
+import { CreateCompanyComponent } from './create-company/create-company.component';
 
 const routes: Routes = [
   {
@@ -24,7 +25,8 @@ const routes: Routes = [
       { path: 'timelime-react', component: TimelineReactEmojiComponent },
       { path: 'myprofile-editable', component: MyProfileEditableComponent },
       { path: 'privacy-settings', component: PrivacySettingsComponent },
-      { path: 'company-management', component: CompanyManagementComponent }
+      { path: 'company-management', component: CompanyManagementComponent },
+      { path: 'create-company', component: CreateCompanyComponent }
     ]
   },
 ];

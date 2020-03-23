@@ -16,7 +16,8 @@ import { TimelineCommentComponent } from './timeline-comment/timeline-comment.co
 import { TimelineReactEmojiComponent } from './timeline-react-emoji/timeline-react-emoji.component';
 import { MyProfileEditableComponent } from './my-profile-editable/my-profile-editable.component';
 import { PrivacySettingsComponent } from './privacy-settings/privacy-settings.component';
-import { CompanyManagementComponent } from './company-management/company-management.component'
+import { CompanyManagementComponent } from './company-management/company-management.component';
+import { CreateCompanyComponent } from './create-company/create-company.component'
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { CompanyManagementComponent } from './company-management/company-managem
     TimelineReactEmojiComponent,
     MyProfileEditableComponent,
     PrivacySettingsComponent,
-    CompanyManagementComponent
+    CompanyManagementComponent,
+    CreateCompanyComponent
   ],
   imports: [
     CommonModule,
