@@ -14,7 +14,8 @@ import { TimelineLikeReactComponent } from './timeline-like-react/timeline-like-
 import { SharedModule } from '../shared/shared.module';
 import { TimelineCommentComponent } from './timeline-comment/timeline-comment.component';
 import { TimelineReactEmojiComponent } from './timeline-react-emoji/timeline-react-emoji.component';
-import { MyProfileEditableComponent } from './my-profile-editable/my-profile-editable.component'
+import { MyProfileEditableComponent } from './my-profile-editable/my-profile-editable.component';
+import { PrivacySettingsComponent } from './privacy-settings/privacy-settings.component'
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { MyProfileEditableComponent } from './my-profile-editable/my-profile-edi
     TimelineLikeReactComponent,
     TimelineCommentComponent,
     TimelineReactEmojiComponent,
-    MyProfileEditableComponent
+    MyProfileEditableComponent,
+    PrivacySettingsComponent
   ],
   imports: [
     CommonModule,
