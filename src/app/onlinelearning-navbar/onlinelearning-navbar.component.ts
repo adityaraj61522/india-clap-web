@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NavigationEnd,Router } from '@angular/router';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-onlinelearning-navbar',
@@ -9,10 +10,13 @@ import { NavigationEnd,Router } from '@angular/router';
 export class OnlinelearningNavbarComponent implements OnInit {
 
   showLearningHeader:Boolean = false
-  constructor(private router:Router) { }
+  constructor(
+    private router:Router,
+    private title: Title
+    ) { }
 
   ngOnInit() {
-
+    this.title.setTitle('Online Learning | India Clap');
     this.router.events.subscribe((res:any)=>{
         console.log("hello")
         if( res instanceof NavigationEnd){
