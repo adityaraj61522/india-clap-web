@@ -15,7 +15,8 @@ import { SharedModule } from '../shared/shared.module';
 import { TimelineCommentComponent } from './timeline-comment/timeline-comment.component';
 import { TimelineReactEmojiComponent } from './timeline-react-emoji/timeline-react-emoji.component';
 import { MyProfileEditableComponent } from './my-profile-editable/my-profile-editable.component';
-import { PrivacySettingsComponent } from './privacy-settings/privacy-settings.component'
+import { PrivacySettingsComponent } from './privacy-settings/privacy-settings.component';
+import { CompanyManagementComponent } from './company-management/company-management.component'
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { PrivacySettingsComponent } from './privacy-settings/privacy-settings.co
     TimelineCommentComponent,
     TimelineReactEmojiComponent,
     MyProfileEditableComponent,
-    PrivacySettingsComponent
+    PrivacySettingsComponent,
+    CompanyManagementComponent
   ],
   imports: [
     CommonModule,

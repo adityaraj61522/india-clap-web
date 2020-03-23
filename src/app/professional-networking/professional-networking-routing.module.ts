@@ -9,6 +9,8 @@ import { NotificationDropdownComponent } from './notification-dropdown/notificat
 import { TimelineCommentComponent } from './timeline-comment/timeline-comment.component';
 import { TimelineReactEmojiComponent } from './timeline-react-emoji/timeline-react-emoji.component';
 import { MyProfileEditableComponent } from './my-profile-editable/my-profile-editable.component';
+import { PrivacySettingsComponent } from './privacy-settings/privacy-settings.component';
+import { CompanyManagementComponent } from './company-management/company-management.component';
 
 const routes: Routes = [
   {
@@ -20,7 +22,9 @@ const routes: Routes = [
       { path: 'notification-dropdown', component: NotificationDropdownComponent },
       { path: 'timeline-comment', component: TimelineCommentComponent },
       { path: 'timelime-react', component: TimelineReactEmojiComponent },
-      { path: 'myprofile-editable', component: MyProfileEditableComponent }
+      { path: 'myprofile-editable', component: MyProfileEditableComponent },
+      { path: 'privacy-settings', component: PrivacySettingsComponent },
+      { path: 'company-management', component: CompanyManagementComponent }
     ]
   },
 ];
