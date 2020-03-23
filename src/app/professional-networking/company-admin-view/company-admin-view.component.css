@@ -1,0 +1,418 @@
+#heading{
+    background-color: teal;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: white;
+    margin-bottom: 20px;
+    
+  }
+  .status{
+    border: 1px gray solid;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    -webkit-box-shadow: 0 8px 8px -6px gray;
+      -moz-box-shadow: 0 8px 8px -6px gray;
+       box-shadow: 0 8px 8px -6px gray;
+  }
+  .status-area{
+    margin-left: 20px;
+  
+  }
+  .post{
+    margin-top: 30px;
+    border: 1px gray solid;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    -webkit-box-shadow: 0 8px 8px -6px gray;
+      -moz-box-shadow: 0 8px 8px -6px gray;
+       box-shadow: 0 8px 8px -6px gray;
+  }
+  .post-image{
+    float: left;
+     
+    margin-right: 20px;
+  }
+  .post-text{
+    
+    margin-left: 70px;
+    color: gray;
+    
+  }
+  #teal{
+    color: teal;
+    font-weight: bold;
+  }
+  .teal{
+    color: teal;
+    font-weight: bold;
+  }
+  a{
+    color: orange;
+    text-decoration: none;
+  }
+  small{
+    color: gray;
+  }
+  hr{
+    height: 1px;
+    margin-top: 0px;
+    
+  }
+  .jbtn{
+    background-color: teal;
+    color: white;
+    border-color: teal;
+  }
+  .like-comment-icon{
+    padding-left: 0px;
+    margin-left: 5px;
+  }
+  .icon-txt{
+    text-align: center;
+  }
+  #icons{
+    float: left;
+    height: 35px;
+    width: 25px;
+    margin-right: 25px;
+  }
+  .icons-div{
+    margin-bottom: 50px;
+  }
+  .report{
+    margin-left: 20px;
+  }
+  .report-img{
+    margin-left: 15px;
+  }
+  .container{
+    margin-bottom: 20px;
+  }
+  .comm-pro{ /*comment profile image*/
+    float: left;
+    margin-top: -7px;
+    margin-bottom: 5px;
+  }
+  .comment{
+    margin-top: 80px;
+  }
+  
+  .img-post{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    max-height: 250px;
+    
+  
+  }
+  .comm-cam{
+    height: 40px;
+  }
+  .comment-box{
+    border-right: none;
+  }
+  .post-notification{
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: lightgray;
+    padding-left: 5px;
+    padding-top: 5px;
+    
+  }
+  .time{
+    float: right;
+    margin-right: 15px;
+    font-size: 12px;
+  }
+  #j-icons{ /*Apply button*/
+    margin-top: 20px;
+    padding-bottom: 10px;
+    
+  }
+  h2{
+    font-size: 19px;
+    font-weight: normal;
+  
+  }
+  #jumbotron-text{
+    border: 1px gray solid;
+    background-color: white;
+    height: 120px;
+    -webkit-box-shadow: 0 8px 6px -6px gray;
+         -moz-box-shadow: 0 8px 6px -6px gray;
+              box-shadow: 0 8px 6px -6px gray;
+    
+  }
+  .jumbotron{
+    background-color: white;
+  }
+  .more-opt{
+    float: right;
+    margin-right: 20px;
+  }
+  #txtarea{
+    padding-top: 20px;
+  }
+
+  @media (min-width: 300px){
+    .jumbotron-image{
+        background-image: url("/assets/icons/1x/Asset 2.png");
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 170px;
+        
+      }
+      .jbtn{
+        font-size: 10px;
+        margin-bottom: 2px;
+        border-color: teal;
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+      #name{
+        float: left;
+        margin-left: 130px;
+        margin-top: 30px;
+        margin-right: 10px;
+      
+      }
+      .jmb-img{/*image of jumbotron*/
+        width: 120px;
+        margin-top: 100px;
+        border-radius: 50%;
+        margin-left: 10px;
+      }
+}
+
+@media (min-width: 406px) {
+    .jumbotron-image{
+        background-image: url("/assets/icons/1x/Asset 2.png");
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 170px;
+        
+      }
+      
+      #checked{
+        
+        margin-right: 60px;
+        
+      }
+      #frm2{
+        
+        width: 356px;
+      }
+      #lvl{
+        border: 1.5px #ebebeb solid;
+        width: 356px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+      .navbar-brand{
+        margin-left: 0px;
+        margin-right: 0px;
+        color: white;
+      }
+      .comm-icons{
+        height: 40px;
+        margin-left: -5px;
+        border-right: 1px gray solid;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-top: 1px gray solid;
+        border-bottom: 1px gray solid;
+      }
+      .comment-box{
+        width: 50%;
+        margin-left: 5px;
+        float: left;
+        border: none;
+        height: 40px;
+        border-top: 1px gray solid;
+        border-bottom: 1px gray solid;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+      }
+      .jbtn{
+        font-size: 10px;
+        margin-bottom: 2px;
+        border-color: teal;
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+      #name{
+        float: left;
+        margin-left: 130px;
+        margin-top: 30px;
+        margin-right: 10px;
+      
+      }
+      .jmb-img{/*image of jumbotron*/
+        width: 120px;
+        margin-top: 100px;
+        border-radius: 50%;
+        margin-left: 10px;
+      }
+}
+
+@media (min-width: 768px) {
+    .jumbotron-image{
+        background-image: url("/assets/icons/1x/Asset 2.png");
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 170px;
+        
+      }
+      .comm-icons{
+        height: 40px;
+        margin-left: -5px;
+        border-right: 1px gray solid;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-top: 1px gray solid;
+        border-bottom: 1px gray solid;
+      }
+      .comment-box{
+        width: 80%;
+        margin-left: 5px;
+        float: left;
+        border: none;
+        height: 40px;
+        border-top: 1px gray solid;
+        border-bottom: 1px gray solid;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+      }
+      .jbtn{
+        font-size: 12px;
+        margin-bottom: 2px;
+        border-color: teal;
+      }
+      #name{/*name div in jumbotron*/
+        float: left;
+        margin-left: 200px;
+        margin-top: 30px;
+        margin-right: 250px;
+      }
+}
+
+@media (min-width: 992px) {
+    .jumbotron-image{
+        background-image: url("/assets/icons/1x/Asset 2.png");
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 170px;
+        
+      }
+      .comm-icons{
+        height: 40px;
+        margin-left: -5px;
+        border-right: 1px gray solid;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-top: 1px gray solid;
+        border-bottom: 1px gray solid;
+      }
+      .comment-box{
+        width: 80%;
+        margin-left: 5px;
+        float: left;
+        border: none;
+        height: 40px;
+        border-top: 1px gray solid;
+        border-bottom: 1px gray solid;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+      }
+      .jbtn{
+        font-size: 12px;
+        margin-bottom: 2px;
+        border-color: teal;
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+}
+
+@media (min-width: 1200px) {
+    .jumbotron-image{
+        background-image: url("/assets/icons/1x/Asset 2.png");
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 170px;
+        
+      }
+      #frm2{
+        
+        width: 468px;
+      }
+      #lvl{
+        border: 1.5px #ebebeb solid;
+        width: 468px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+      .navbar-brand{
+        margin-left: 20px;
+        margin-right: 20px;
+        color: white;
+      }
+      #status-icons{
+        margin-left: 20px;
+      }
+      .comm-icons{
+        height: 40px;
+        margin-left: -5px;
+        border-right: 1px gray solid;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-top: 1px gray solid;
+        border-bottom: 1px gray solid;
+      }
+      .comment-box{
+        width: 80%;
+        margin-left: 5px;
+        float: left;
+        border: none;
+        height: 40px;
+        border-top: 1px gray solid;
+        border-bottom: 1px gray solid;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+      }
+      .upload-image{
+        margin-left: 140px;
+      }
+      .jbtn{
+        font-size: 15px;
+        margin-bottom: 0px;
+        border-color: teal;
+        padding-left: 5px;
+        padding-right: 5px;
+        
+      }
+      .jmb-img{/*image of jumbotron*/
+        width: 150px;
+        margin-top: 100px;
+        border-radius: 50%;
+        margin-left: 30px;
+      }
+      #name{/*name div in jumbotron*/
+        float: left;
+        margin-left: 200px;
+        margin-top: 30px;
+        margin-right: 400px;
+      }
+}

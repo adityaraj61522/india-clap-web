@@ -12,6 +12,7 @@ import { MyProfileEditableComponent } from './my-profile-editable/my-profile-edi
 import { PrivacySettingsComponent } from './privacy-settings/privacy-settings.component';
 import { CompanyManagementComponent } from './company-management/company-management.component';
 import { CreateCompanyComponent } from './create-company/create-company.component';
+import { CompanyAdminViewComponent } from './company-admin-view/company-admin-view.component';
 
 const routes: Routes = [
   {
@@ -26,7 +27,8 @@ const routes: Routes = [
       { path: 'myprofile-editable', component: MyProfileEditableComponent },
       { path: 'privacy-settings', component: PrivacySettingsComponent },
       { path: 'company-management', component: CompanyManagementComponent },
-      { path: 'create-company', component: CreateCompanyComponent }
+      { path: 'create-company', component: CreateCompanyComponent },
+      { path: 'company-admin-view', component: CompanyAdminViewComponent }
     ]
   },
 ];
