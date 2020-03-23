@@ -13,6 +13,7 @@ import { PrivacySettingsComponent } from './privacy-settings/privacy-settings.co
 import { CompanyManagementComponent } from './company-management/company-management.component';
 import { CreateCompanyComponent } from './create-company/create-company.component';
 import { CompanyAdminViewComponent } from './company-admin-view/company-admin-view.component';
+import { CompanyUserViewComponent } from './company-user-view/company-user-view.component';
 
 const routes: Routes = [
   {
@@ -28,7 +29,8 @@ const routes: Routes = [
       { path: 'privacy-settings', component: PrivacySettingsComponent },
       { path: 'company-management', component: CompanyManagementComponent },
       { path: 'create-company', component: CreateCompanyComponent },
-      { path: 'company-admin-view', component: CompanyAdminViewComponent }
+      { path: 'company-admin-view', component: CompanyAdminViewComponent },
+      { path: 'company-user-view', component: CompanyUserViewComponent }
     ]
   },
 ];

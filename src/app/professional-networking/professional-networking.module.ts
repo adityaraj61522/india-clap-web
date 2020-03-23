@@ -18,7 +18,8 @@ import { MyProfileEditableComponent } from './my-profile-editable/my-profile-edi
 import { PrivacySettingsComponent } from './privacy-settings/privacy-settings.component';
 import { CompanyManagementComponent } from './company-management/company-management.component';
 import { CreateCompanyComponent } from './create-company/create-company.component';
-import { CompanyAdminViewComponent } from './company-admin-view/company-admin-view.component'
+import { CompanyAdminViewComponent } from './company-admin-view/company-admin-view.component';
+import { CompanyUserViewComponent } from './company-user-view/company-user-view.component'
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { CompanyAdminViewComponent } from './company-admin-view/company-admin-vi
     PrivacySettingsComponent,
     CompanyManagementComponent,
     CreateCompanyComponent,
-    CompanyAdminViewComponent
+    CompanyAdminViewComponent,
+    CompanyUserViewComponent
   ],
   imports: [
     CommonModule,
