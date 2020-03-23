@@ -19,7 +19,8 @@ import { PrivacySettingsComponent } from './privacy-settings/privacy-settings.co
 import { CompanyManagementComponent } from './company-management/company-management.component';
 import { CreateCompanyComponent } from './create-company/create-company.component';
 import { CompanyAdminViewComponent } from './company-admin-view/company-admin-view.component';
-import { CompanyUserViewComponent } from './company-user-view/company-user-view.component'
+import { CompanyUserViewComponent } from './company-user-view/company-user-view.component';
+import { MoreTabComponent } from './more-tab/more-tab.component'
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { CompanyUserViewComponent } from './company-user-view/company-user-view.
     CompanyManagementComponent,
     CreateCompanyComponent,
     CompanyAdminViewComponent,
-    CompanyUserViewComponent
+    CompanyUserViewComponent,
+    MoreTabComponent
   ],
   imports: [
     CommonModule,

@@ -14,6 +14,7 @@ import { CompanyManagementComponent } from './company-management/company-managem
 import { CreateCompanyComponent } from './create-company/create-company.component';
 import { CompanyAdminViewComponent } from './company-admin-view/company-admin-view.component';
 import { CompanyUserViewComponent } from './company-user-view/company-user-view.component';
+import { MoreTabComponent } from './more-tab/more-tab.component';
 
 const routes: Routes = [
   {
@@ -30,7 +31,8 @@ const routes: Routes = [
       { path: 'company-management', component: CompanyManagementComponent },
       { path: 'create-company', component: CreateCompanyComponent },
       { path: 'company-admin-view', component: CompanyAdminViewComponent },
-      { path: 'company-user-view', component: CompanyUserViewComponent }
+      { path: 'company-user-view', component: CompanyUserViewComponent },
+      { path: 'more-tabs', component: MoreTabComponent }
     ]
   },
 ];
