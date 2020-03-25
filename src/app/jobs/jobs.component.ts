@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { Router, NavigationEnd } from '@angular/router';
+import { filter } from 'rxjs/operators';
 
 @Component({
   selector: 'app-jobs',
@@ -8,9 +10,19 @@ import { Title } from '@angular/platform-browser';
 })
 export class JobsComponent implements OnInit {
 
+  hideBanner: boolean = false;
+
   constructor(
-    private title: Title
-  ) { }
+    private title: Title,
+    private router: Router
+  ) {
+    this.router.events.pipe(filter(event => event instanceof NavigationEnd))
+      .subscribe((event: NavigationEnd) => {
+        if (event.url === '/jobs/job-description') {
+          this.hideBanner = true;
+        }
+      })
+  }
 
   ngOnInit() {
     this.title.setTitle('Jobs | India Clap');

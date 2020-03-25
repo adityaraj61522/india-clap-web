@@ -21,61 +21,36 @@
 <div class="mainbody">
 
     <div class="place">
-        <form [formGroup]='jobDescriptionForm'>
-
         <div class="heading1">
-            <h3>Post Description</h3>
+          <h3>Post Description</h3>
         </div>
         <div id="des1">
-            Art and design enthusiast. Always observing the space around me and finding things that interest and
-            intrigue me. Anything creative draws me in. I have a passion for people, stories, the environment and the
-            visual media! Art and design enthusiast. Always observing the space around me and finding things that
-            interest and intrigue me. Anything creative draws me in. Anything creative draws me in. I have a passion for
-            people, stories, the environment and the visual media! Art and design enthusiast. Always observing the space
-            around me and finding things that interest and intrigue me. Anything creative draws me in. I have a passion
-            for people, stories, the environment and the visual media! Art and design enthusiast. Anything creative
-            draws me in. I have a passion for people, stories, the environment and the visual media! Art and design
-            enthusiast. Always observing .
+          Art and design enthusiast. Always observing the space around me and finding things that interest and intrigue me. Anything creative draws me in. I have a passion for people, stories, the environment and the visual media! Art and design enthusiast. Always observing the space around me and finding things that interest and intrigue me. Anything creative draws me in. Anything creative draws me in. I have a passion for people, stories, the environment and the visual media! Art and design enthusiast. Always observing the space around me and finding things that interest and intrigue me. Anything creative draws me in. I have a passion for people, stories, the environment and the visual media! Art and design enthusiast. Anything creative draws me in. I have a passion for people, stories, the environment and the visual media! Art and design enthusiast. Always observing .
         </div>
-
+    
         <div class="heading1">
-            <h3>Job Title</h3>
+          <h3>Job Title</h3>
         </div>
         <div id="des1">
-            Art and design enthusiast. Always observing the space around me and finding things that interest and
-            intrigue me. Anything creative draws me in. I have a passion for people, stories, the environment and the
-            visual media! Art and design enthusiast. Always observing the space around me and finding things that
-            interest and intrigue me.
+          Art and design enthusiast. Always observing the space around me and finding things that interest and intrigue me. Anything creative draws me in. I have a passion for people, stories, the environment and the visual media! Art and design enthusiast. Always observing the space around me and finding things that interest and intrigue me.  
         </div>
         <h3>Skills required</h3>
-        <div>
-
-            <input class="form-control" id="frm2" placeholder="Salary per month"  formControlName="job_salary"
-            [ngClass]="{'is-invalid':jobDescriptionForm.get('job_salary').touched && jobDescriptionForm.get('job_salary').invalid}">
-            <div class="invalid-feedback">
-                <p class="error">This field is required</p>
-             </div> 
-        </div>
-        <h3>Salary Range</h3>
-        <div>
-
-            <input class="form-control" id="frm2" placeholder="Skills which are expected from the applicant"  formControlName="job_skills"
-            [ngClass]="{'is-invalid':jobDescriptionForm.get('job_skills').touched && jobDescriptionForm.get('job_skills').invalid}">
-            <div class="invalid-feedback">
-                <p class="error">This field is required</p>
-             </div> 
-        </div>
-        <h3>Employee email</h3>
-        <div>
-
-            <input class="form-control" id="frm2" placeholder="abc@abc.com" formControlName="employer_email"
-            [ngClass]="{'is-invalid':jobDescriptionForm.get('employer_email').touched && jobDescriptionForm.get('employer_email').invalid}">
-            <div class="invalid-feedback">
-                <p class="error">This field is required</p>
-             </div> 
-        </div>
-        </form>
-    </div>
+      <div >
+        
+        <input class="form-control" id="frm2"   placeholder="Salary per month">
+      </div>
+      <h3>Salary Range</h3>
+      <div >
+        
+        <input class="form-control" id="frm2"   placeholder="Skills which are expected from the applicant">
+      </div>
+      <h3>Employee email</h3>
+      <div >
+        
+        <input class="form-control" id="frm2"   placeholder="abc@abc.com">
+      </div>
+      </div>
+      
 
 </div>
 <app-profile-share-alert></app-profile-share-alert>
