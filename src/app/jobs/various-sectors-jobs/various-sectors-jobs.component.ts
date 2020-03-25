@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Renderer2, ElementRef, ViewChild } from '@angular/core';
 import { JobsService } from 'src/app/services/jobs.service';
 
 @Component({
@@ -8,8 +8,10 @@ import { JobsService } from 'src/app/services/jobs.service';
 })
 export class VariousSectorsJobsComponent implements OnInit {
 
+  @ViewChild('filters', { static: false }) filtersRef: ElementRef
   constructor(
-    private jobService: JobsService
+    private jobService: JobsService,
+    private renderer: Renderer2
   ) { }
 
   jobList: any[];
@@ -23,6 +25,10 @@ export class VariousSectorsJobsComponent implements OnInit {
       .subscribe(respObj => {
         this.jobList = [...respObj['results']];
       })
+  }
+
+  displayJobFilters() {
+    this.renderer.setStyle(this.filtersRef.nativeElement, 'display', 'block');
   }
 
 }

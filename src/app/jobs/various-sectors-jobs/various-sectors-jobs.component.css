@@ -62,29 +62,60 @@
   #crdtxt{
     padding-left: 120px;
   }
-
-  @media (min-width: 1200px) {
-
-  #space1{
-    padding-left: 10px;
-    padding-right: 80px;
-    padding-top: 2px;
-    color: #A9A9A9;
-    font-size: 15px;
+  #filter-data{
+    float: right;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+   background-color: white;
+   border: 1px gray solid;
+   padding-left: 5px;
+   padding-top: 5px;
   }
-  #filter{
-      margin-left: 750px;
-  }
-}
 
-@media (min-width: 992px) {
-    filter{
-        margin-left: 850px;
-    }
+  
+
+
+
+
+
+@media(min-width: 406px){
+    #space1{
+        padding-left: 10px;
+          padding-right: 30px;
+          padding-top: 2px;
+          color: #A9A9A9;
+        font-size: 15px;
+      }
+      #filter{
+        
+        margin-left: 150px;
+      }
 }
 
 @media (min-width: 768px) {
     #filter{
+  
         margin-left: 450px;
+      }
+}
+
+@media (min-width: 992px) {
+    #filter{
+        margin-left: 850px;
     }
+}
+
+@media (min-width: 1200px) {
+    #space1{
+      padding-left: 10px;
+      padding-right: 80px;
+      padding-top: 2px;
+      color: #A9A9A9;
+    font-size: 15px;
+  }
+  #filter{
+    
+    margin-left: 750px;
+  }
 }

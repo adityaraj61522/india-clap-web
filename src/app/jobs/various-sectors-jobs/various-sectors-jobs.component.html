@@ -3,7 +3,7 @@
 
         <h2>Job across various sectors </h2>
         <div id="filter">
-            <button type="button" class="btn ">
+            <button type="button" class="btn " (click)="displayJobFilters()">
 
                 <img src="/assets/icons/1x/Filter.png" alt="" width="22" height="25">
 
@@ -34,4 +34,10 @@
             </div>
         </div>
     </div>
+</div>
+<div id="filter-data" style="display: none;" #filters>
+    <p>Alphabetical Order</p>
+    <hr>
+    <p>Time since job was posted</p>
+
 </div>
