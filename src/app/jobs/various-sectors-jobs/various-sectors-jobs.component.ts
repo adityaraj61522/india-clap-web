@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { JobsService } from 'src/app/services/jobs.service';
 
 @Component({
   selector: 'app-various-sectors-jobs',
@@ -7,9 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VariousSectorsJobsComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private jobService: JobsService
+  ) { }
+
+  jobList: any[];
 
   ngOnInit() {
+    this.getVariousSectorsJobs();
+  }
+
+  getVariousSectorsJobs() {
+    this.jobService.get_various_sectors_jobs()
+      .subscribe(respObj => {
+        this.jobList = [...respObj['results']];
+      })
   }
 
 }

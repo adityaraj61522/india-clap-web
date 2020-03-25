@@ -27,6 +27,8 @@ import { FavSaveApplyComponent } from './fav-save-apply/fav-save-apply.component
 
 import { SharedModule } from '../shared/shared.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { JobsService } from '../services/jobs.service';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -62,6 +64,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     SharedModule,
     FormsModule,
     ReactiveFormsModule,
-  ]
+    HttpClientModule
+  ],
+  providers:[JobsService]
 })
 export class JobsModule { }

@@ -11,13 +11,17 @@ export class JobsService {
 
   constructor(private http: HttpClient) {
   }
+
+  skill_test($data: any) {
+    return this.http.post(`${config.base_url}/JobMarket/skilltest/`, $data, { headers: this.headers });
+  }
   
-   skill_test($data:any) {
-    return this.http.post(`${config.base_url}/JobMarket/skilltest/`,$data, { headers: this.headers });
-
+  create_job($data: any) {
+    return this.http.post(`${config.base_url}/JobMarket/skilltest/`, $data, { headers: this.headers });
   }
-  create_job($data:any) {
-    return this.http.post(`${config.base_url}/JobMarket/skilltest/`,$data, { headers: this.headers });
 
+  get_various_sectors_jobs(){
+    return this.http.get(`${config.base_url}/JobMarket/jobs`);
   }
+
 }
