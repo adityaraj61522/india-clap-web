@@ -144,3 +144,24 @@
         width: 570px;
       }
   }
+  #profile-share{
+    width: 286px;
+    height: 90px;
+    border: 1px gray solid;
+    padding-left: 5px;
+    padding-top: 5px;
+    border-radius: 5px;
+    float: right;
+    background-color: white;
+    
+    position: absolute;
+    top: 45%;
+     right: 25px;
+  }
+
+  .cont{
+    width: 80px;
+    height: 30px;
+    background-color: teal;
+    font-size: 12px;
+  }

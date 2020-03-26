@@ -1,17 +1,17 @@
 <div class="mainbody">
     <div class="header">
-        <h2>Jobs you have saved</h2>
+        <h2>Instant apply jobs</h2>
     </div>
     <div class="place">
         <div class="card" style="width: 100%;">
             <div class="card-body">
 
-                <img class="card-img" src="/assets/icons/1x/bulb.png" alt="Card image cap">
+                <img class="card-img" src="{{companyObj?.logo}}" alt="Card image cap">
                 <div id="crdtxt">
                     <a href="">
-                        <h4 class="card-title">Accounting</h4>
-                        <span class="card-text">Gurgao, India</span><br>
-                        <span class="card-text">Creative Head</span>
+                        <h4 class="card-title">{{companyObj?.name}}</h4>
+                        <span class="card-text">{{companyObj?.location}}</span><br>
+                        <span class="card-text">{{jobObj?.title}}</span>
                     </a>
                 </div>
 

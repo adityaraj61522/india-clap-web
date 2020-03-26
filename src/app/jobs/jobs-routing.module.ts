@@ -42,7 +42,7 @@ const routes: Routes = [
       { path: 'fav-save-apply', component: FavSaveApplyComponent },
       { path: 'select-all-apply', component: SelectAllApplyComponent },
       { path: 'description/:jobId', component: JobDescriptionComponent },
-      { path: 'upload-resume', component: UploadResumeComponent },
+      { path: 'upload-resume/:jobId', component: UploadResumeComponent },
       { path: 'archive-job-alert', component: ArchiveJobsAlertComponent },
       { path: 'archive-job-search', component: ArchiveJobSearchComponent },
       { path: 'skills-test',component:SkillTestComponent}

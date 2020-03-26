@@ -32,4 +32,8 @@ export class JobsService {
     return this.http.post(`${config.base_url}/JobMarket/jobs/${jobId}/apply`, $data)
   }
 
+  get_company_details(companyId: number) {
+    return this.http.get(`${config.base_url}/JobMarket/companies/${companyId}`);
+  }
+
 }

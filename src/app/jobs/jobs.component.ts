@@ -18,9 +18,10 @@ export class JobsComponent implements OnInit {
   ) {
     this.router.events.pipe(filter(event => event instanceof NavigationEnd))
       .subscribe((event: NavigationEnd) => {
-        if (event.url === '/jobs/job-description') {
+        if (event.url.includes('/jobs/description')) {
           this.hideBanner = true;
         }
+        else this.hideBanner = false;
       })
   }
 

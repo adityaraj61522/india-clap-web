@@ -50,4 +50,7 @@
     </div>
   </div>
 </div>
-<app-profile-share-alert></app-profile-share-alert>
+<div id="profile-share" style="display: none;" (click)="displayProfileShareAlert()" #profileShare>
+  Your profile will be shared with the company and the employer.
+  <button class="btn btn-primary cont" routerLink="/jobs/upload-resume/{{jobId}}">Continue</button>
+</div>
