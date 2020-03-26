@@ -28,7 +28,7 @@ export class UploadResumeComponent implements OnInit {
     this.jobId = Number(this.route.snapshot.paramMap.get('jobId'));
     this.getJobDetails(this.jobId);
     this.uploadResumeForm = new FormGroup({
-      employee_memo: new FormControl("", Validators.required),
+      text: new FormControl("", Validators.required),
       video: new FormControl(null, Validators.required)
     })
   }
