@@ -41,7 +41,7 @@ const routes: Routes = [
       { path: 'instant-apply-search', component: InstantApplySearchComponent },
       { path: 'fav-save-apply', component: FavSaveApplyComponent },
       { path: 'select-all-apply', component: SelectAllApplyComponent },
-      { path: 'job-description', component: JobDescriptionComponent },
+      { path: 'description/:jobId', component: JobDescriptionComponent },
       { path: 'upload-resume', component: UploadResumeComponent },
       { path: 'archive-job-alert', component: ArchiveJobsAlertComponent },
       { path: 'archive-job-search', component: ArchiveJobSearchComponent },
