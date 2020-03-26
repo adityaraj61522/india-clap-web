@@ -17,28 +17,28 @@
 
             </div>
         </div>
-        <div class="heading1">
-            <h3>Add an optional message to the Employer</h3>
-        </div>
-        <div id="des1">
-            Art and design enthusiast. Always observing the space around me and finding things that interest and
-            intrigue me. Anything creative draws me in. I have a passion for people, stories, the environment and the
-            visual media! Art and design enthusiast. Always observing the space around me and finding things that
-            interest and intrigue me. Anything creative draws me in. Anything creative draws me in. I have a passion for
-            people, stories, the environment and the visual media! Art and design enthusiast. Always observing the space
-            around me and finding things that interest and intrigue me. Anything creative draws me in. I have a passion
-            for people, stories, the envir onment and the visual media! Art and design enthusiast. Anything creative
-            draws me in. I have a passion for people, stories, the environment and the visual media! Art and design
-            enthusiast. Always observing .
-        </div>
-        <div class="heading1 ">
-            <h3 class="left">Upload video resume</h3>
-            <img class="vid-img" src="/assets/icons/1x/video.png">
+        <form [formGroup]='uploadResumeForm'>
 
-        </div>
-        <div id="des1">
-            Upload yout video resume (not more than 30 sec)
-        </div>
-        <button class="btn btn-primary apply">Apply</button>
+            <h3>Add an optional message to the Employer</h3>
+                <div>
+
+                    <input class="form-control" id="frm2" placeholder="Your message here..."
+                        formControlName="employee_memo"
+                        [ngClass]="{'is-invalid':uploadResumeForm.get('employee_memo').touched && uploadResumeForm.get('employee_memo').invalid}">
+                    <div class="invalid-feedback">
+                        <p class="error">This field is required</p>
+                    </div>
+                </div>
+                <div class="heading1 ">
+                    <h3 class="left">Upload video resume</h3>
+                    <img class="vid-img" src="/assets/icons/1x/video.png">
+
+                </div>
+                <div id="des1">
+                    Upload your video resume (not more than 30 sec)
+                    <input class="form-control" id="frm2" type="file" (change)="onResumeUpload($event);">
+                </div>
+                <button class="btn btn-primary apply" (click)="onSubmit();">Apply</button>
+        </form>
     </div>
 </div>

@@ -16,6 +16,11 @@
   .card{
       width: 1000px;
   }
+
+  .heading1{
+    position: relative;
+    top: 15px;
+  }
   .card-img{
       width: 100px;
       float: left;

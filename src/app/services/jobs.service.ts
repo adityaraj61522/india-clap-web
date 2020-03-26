@@ -36,4 +36,7 @@ export class JobsService {
     return this.http.get(`${config.base_url}/JobMarket/companies/${companyId}`);
   }
 
+  upload_resume(jobId: number, $data: any) {
+    return this.http.post(`${config.base_url}/JobMarket/jobs/${jobId}/apply`, $data);
+  }
 }
