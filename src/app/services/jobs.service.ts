@@ -52,5 +52,16 @@ export class JobsService {
     return this.http.get(`${config.base_url}/JobMarket/jobs/${jobId}/save`)
   }
 
+  search_job($data) {
+    
+    const formData = new FormData();
+    formData.append('salary', $data['salary']);
+    formData.append('location_District', $data['location_District']);
+    formData.append('location_State', $data['location_State']);
+    formData.append('starting_date', $data['starting_date']);
+    formData.append('end_date', $data['end_date']);
+
+    this.http.post(`${config.base_url}/JobMarket/jobs/`, formData);
+  }
 
 }

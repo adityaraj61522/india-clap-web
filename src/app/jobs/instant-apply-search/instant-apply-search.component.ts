@@ -12,27 +12,27 @@ export class InstantApplySearchComponent implements OnInit {
   instantApplyForm:FormGroup;
   constructor(private fb: FormBuilder,private router:Router) {
     this.instantApplyForm = new FormGroup({
-      job_name: new FormControl("", Validators.required),
-      job_state: new FormControl("", Validators.required),
-      job_district: new FormControl("", Validators.required),
-      job_from: new FormControl("", Validators.required),
-      job_to: new FormControl("", Validators.required),
+      salary: new FormControl("", Validators.required),
+      location_State: new FormControl("", Validators.required),
+      location_District: new FormControl("", Validators.required),
+      starting_time: new FormControl("", Validators.required),
+      end_time: new FormControl("", Validators.required),
     });
    }
    submit()
    {
-    this.instantApplyForm.controls["job_name"].markAsTouched();
-    this.instantApplyForm.controls["job_state"].markAsTouched();
-    this.instantApplyForm.controls["job_district"].markAsTouched();
-    this.instantApplyForm.controls["job_from"].markAsTouched();
-    this.instantApplyForm.controls["job_to"].markAsTouched();
+    this.instantApplyForm.controls["salary"].markAsTouched();
+    this.instantApplyForm.controls["location_State"].markAsTouched();
+    this.instantApplyForm.controls["location_District"].markAsTouched();
+    this.instantApplyForm.controls["starting_time"].markAsTouched();
+    this.instantApplyForm.controls["end_time"].markAsTouched();
     if(this.instantApplyForm.valid)
     {
-      console.log(this.instantApplyForm.get('job_name').value);
-      console.log(this.instantApplyForm.get('job_state').value);
-      console.log(this.instantApplyForm.get('job_district').value);
-      console.log(this.instantApplyForm.get('job_from').value);
-      console.log(this.instantApplyForm.get('job_to').value);
+      console.log(this.instantApplyForm.get('salary').value);
+      console.log(this.instantApplyForm.get('location_State').value);
+      console.log(this.instantApplyForm.get('location_District').value);
+      console.log(this.instantApplyForm.get('starting_time').value);
+      console.log(this.instantApplyForm.get('end_time').value);
      
     }
    }

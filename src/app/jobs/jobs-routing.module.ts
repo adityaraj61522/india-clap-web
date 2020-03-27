@@ -43,7 +43,6 @@ const routes: Routes = [
       { path: 'select-all-apply', component: SelectAllApplyComponent },
       { path: 'description/:jobId', component: JobDescriptionComponent },
       { path: 'upload-resume/:jobId', component: UploadResumeComponent },
-      { path: 'archive-job-alert', component: ArchiveJobsAlertComponent },
       { path: 'archive-job-search', component: ArchiveJobSearchComponent },
       { path: 'skills-test',component:SkillTestComponent}
     ]
