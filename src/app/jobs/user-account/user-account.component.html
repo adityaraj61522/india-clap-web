@@ -11,7 +11,7 @@
             </div>
         </a>
         <a type="submit">
-            <div class="card one-edge-shadow">
+            <div class="card one-edge-shadow" (click)="showArchiveJobAlert();">
                 <div class="card-body">
                     <h5 class="card-title">Archive job searches</h5>
                 </div>
@@ -28,4 +28,8 @@
 
     </div>
 
+</div>
+<div id="message" style="display: none;" #message>
+    The job displayed here may not be active anymore
+    <button class="btn btn-primary teal" routerLink="/jobs/archive-job-search">Continue</button>
 </div>

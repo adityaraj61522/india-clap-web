@@ -1,23 +1,33 @@
 <div class="mainbody">
     <div class="header">
-
+          
         <h2>Job across various sectors </h2>
-        <div id="filter">
-            <button type="button" class="btn " (click)="displayJobFilters()">
+        <div id="button1">
+          <button type="submit" class="btn btn-primary hbtn" (click)="onSelectAllAndApply()">Select all and apply</button>
 
-                <img src="/assets/icons/1x/Filter.png" alt="" width="22" height="25">
-
-            </button>
         </div>
+        <div id="button">
+          <button type="submit" class="btn btn-primary hbtn">Instant Apply Jobs</button>
 
-    </div>
+        </div>
+        
+        <div id="filter">
+          <button type="button" class="btn ">
+
+          <img src="/assets/icons/1x/Filter.png" alt="" width="22" height="25">
+
+          </button>
+        </div>
+        
+      </div>
     <div class="place">
         <div class="card" style="width: 100%;" *ngFor="let job of jobList">
             <div class="card-body">
                 <div id="symbols">
-                    <span id="space1">Apply</span>
+                    <span id="space1" routerLink="/jobs/description/{{jobId}}">Apply</span>
 
-                    <img src="/assets/icons/1x/star.png" alt="" width="14px" height="14px">
+                    <img src="/assets/icons/1x/star.png" id="job.id" (click)="onFavouriteJob($event, job.id)" alt=""
+                        width="14px" height="14px">
                     <span id="space"></span>
                     <img src="/assets/icons/1x/save.png" alt="" width="10px" height="15">
                 </div>

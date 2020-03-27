@@ -39,4 +39,18 @@ export class JobsService {
   upload_resume(jobId: number, $data: any) {
     return this.http.post(`${config.base_url}/JobMarket/jobs/${jobId}/apply`, $data);
   }
+
+  archive_job_search($data: any) {
+    return this.http.get(`${config.base_url}/JobMarket/jobs/archive?month=${$data['month']}&job_title=${$data['job_title']}`)
+  }
+
+  select_all_jobs() {
+    return this.http.get(`${config.base_url}/JobMarket/jobs/instantApply`);
+  }
+
+  save_job(jobId: number) {
+    return this.http.get(`${config.base_url}/JobMarket/jobs/${jobId}/save`)
+  }
+
+
 }

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
+import { JobsService } from 'src/app/services/jobs.service';
 
 @Component({
   selector: 'app-archive-job-search',
@@ -9,26 +10,30 @@ import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms'
 })
 export class ArchiveJobSearchComponent implements OnInit {
 
-  archiveJobSearchForm:FormGroup;
+  archiveJobSearchForm: FormGroup;
 
-  constructor(private fb: FormBuilder,private router:Router) {
+  constructor(
+    private fb: FormBuilder,
+    private router: Router,
+    private jobService: JobsService
+  ) {
     this.archiveJobSearchForm = new FormGroup({
-      job_time: new FormControl("", Validators.required),
-      job_type: new FormControl("", Validators.required),
-     
+      month: new FormControl("", Validators.required),
+      job_title: new FormControl("", Validators.required),
+
     });
-   }
-   submit()
-   {
-    this.archiveJobSearchForm.controls["job_time"].markAsTouched();
-    this.archiveJobSearchForm.controls["job_type"].markAsTouched();
-    if(this.archiveJobSearchForm.valid)
-    {
-      console.log(this.archiveJobSearchForm.get('job_time').value);
-      console.log(this.archiveJobSearchForm.get('job_type').value);
-     
-    }
-   }
+  }
+  submit() {
+    this.archiveJobSearchForm.controls["month"].markAsTouched();
+    this.archiveJobSearchForm.controls["job_title"].markAsTouched();
+    if (!this.archiveJobSearchForm.valid) return;
+
+    this.jobService.archive_job_search(this.archiveJobSearchForm.value)
+      .subscribe(respObj => {
+        console.log(respObj);
+      })
+
+  }
   ngOnInit() {
   }
 

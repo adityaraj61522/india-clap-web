@@ -1,15 +1,15 @@
 <div class="container">
     <div class="mainbody">
         <div class="header">
-            <h2>Take a holographic skill test and enhance your ability</h2>
+            <h2>Archive job searches</h2>
         </div>
         <form [formGroup]='archiveJobSearchForm'>
         <div class="place">
             <h3>Time period</h3>
             <div>
 
-                <input class="form-control" id="frm2" placeholder="1 month, 5 month, etc"  formControlName="job_time"
-                [ngClass]="{'is-invalid':archiveJobSearchForm.get('job_time').touched && archiveJobSearchForm.get('job_time').invalid}">
+                <input class="form-control" id="frm2" placeholder="1 month, 5 month, etc"  formControlName="month"
+                [ngClass]="{'is-invalid':archiveJobSearchForm.get('month').touched && archiveJobSearchForm.get('month').invalid}">
                 <div class="invalid-feedback">
                     <p class="error">This field is required</p>
                  </div> 
@@ -17,8 +17,8 @@
             <h3>Name or type of job</h3>
             <div>
 
-                <input class="form-control" id="frm2" placeholder="Mechanic, designer, etc"  formControlName="job_type"
-                [ngClass]="{'is-invalid':archiveJobSearchForm.get('job_type').touched && archiveJobSearchForm.get('job_type').invalid}">
+                <input class="form-control" id="frm2" placeholder="Mechanic, designer, etc"  formControlName="job_title"
+                [ngClass]="{'is-invalid':archiveJobSearchForm.get('job_title').touched && archiveJobSearchForm.get('job_title').invalid}">
                 <div class="invalid-feedback">
                     <p class="error">This field is required</p>
                  </div> 
