@@ -61,7 +61,8 @@ export class JobsService {
     formData.append('starting_date', $data['starting_date']);
     formData.append('end_date', $data['end_date']);
 
-    this.http.post(`${config.base_url}/JobMarket/jobs/`, formData);
+    return this.http.post(`${config.base_url}/JobMarket/jobs/`, formData)
+      
   }
 
 }

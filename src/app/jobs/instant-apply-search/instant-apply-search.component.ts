@@ -28,7 +28,10 @@ export class InstantApplySearchComponent implements OnInit {
     this.instantApplyForm.controls["starting_time"].markAsTouched();
     this.instantApplyForm.controls["end_time"].markAsTouched();
     if (!this.instantApplyForm.valid) return;
-    this.jobService
+    this.jobService.search_job(this.instantApplyForm.value)
+      .subscribe(respObj => {
+        console.log(respObj)
+      })
   }
 
   ngOnInit() {
