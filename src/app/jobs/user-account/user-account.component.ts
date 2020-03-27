@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-user-account',
@@ -7,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserAccountComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit() {
   }
+  jobSearch()
+  {
+  this.router.navigate(['/jobs/instant-apply-search'])
+  }
+  archiveJobSearch()
+  {
+    this.router.navigate(['/jobs/archive-job-search'])
 
+  }
+  skillCourseSearch()
+  {
+    this.router.navigate(['/offline-learning/skill-courses-results'])
+
+  }
 }
