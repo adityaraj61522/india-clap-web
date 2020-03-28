@@ -15,9 +15,17 @@ export class JobsService {
   skill_test($data: any) {
     return this.http.post(`${config.base_url}/JobMarket/skilltest/`, $data, { headers: this.headers });
   }
-
   create_job($data: any) {
-    return this.http.post(`${config.base_url}/JobMarket/skilltest/`, $data, { headers: this.headers });
+    // console.log($data)
+    return this.http.post(`${config.base_url}/JobMarket/jobs/create/`, $data, { headers: this.headers });
+
+  }
+  get_companies() {
+    //JobMarket/companies
+    return this.http.get(`${config.base_url}/JobMarket/companies`, { headers: this.headers });
+  }
+  get_jobList() {
+    return this.http.get(`${config.base_url}/JobMarket/jobs/`, { headers: this.headers });
   }
 
   get_various_sectors_jobs() {
@@ -53,7 +61,7 @@ export class JobsService {
   }
 
   search_job($data) {
-    
+
     const formData = new FormData();
     formData.append('salary', $data['salary']);
     formData.append('location_District', $data['location_District']);
@@ -62,7 +70,7 @@ export class JobsService {
     formData.append('end_date', $data['end_date']);
 
     return this.http.post(`${config.base_url}/JobMarket/jobs/`, formData)
-      
+
   }
 
 }

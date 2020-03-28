@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { JobsService } from 'src/app/services/jobs.service';
 
 @Component({
   selector: 'app-job-postings',
@@ -6,10 +7,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./job-postings.component.css']
 })
 export class JobPostingsComponent implements OnInit {
-
-  constructor() { }
+  month:any;
+  day:any;
+  jobList:any=[];
+  constructor(private jService:JobsService) { }
 
   ngOnInit() {
+    var today = new Date();
+       this.month = (today.getMonth()+1);
+       this.day = today.getDate();
+    this.jService.get_jobList().subscribe((data:any)=>{
+      this.jobList = data.results;
+      console.log(this.jobList)
+    })
   }
 
 }

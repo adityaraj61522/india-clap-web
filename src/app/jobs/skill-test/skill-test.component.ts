@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, FormControl, Validators,ReactiveFormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
-
+import {JobsService} from './../../services/jobs.service';
 @Component({
   selector: 'app-skill-test',
   templateUrl: './skill-test.component.html',
@@ -13,9 +13,9 @@ export class SkillTestComponent implements OnInit {
   testName:any;
   namevalidation: boolean=false;
   checkNum:number=1;
+  obj:any={};
 
-
-  constructor(private fb: FormBuilder,private router:Router) {
+  constructor(private fb: FormBuilder,private router:Router,private jService:JobsService) {
     this.testForm = new FormGroup({
       test_name: new FormControl("", Validators.required),
     });
@@ -33,7 +33,17 @@ export class SkillTestComponent implements OnInit {
      {
       this.testName=this.testForm.get('test_name').value;
       this.namevalidation=false;
-      console.log(this.testName);
+      this.obj.name=this.testName;
+      if(this.checkNum==1)
+      this.obj.level = 'E'
+      else if(this.checkNum==2)
+      this.obj.level = 'I'
+      else
+      this.obj.level = 'A'
+      console.log(this.obj);
+      this.jService.skill_test(this.obj).subscribe((data:any)=>{
+       console.log(data);
+      })
      }
      else
      this.namevalidation = true;

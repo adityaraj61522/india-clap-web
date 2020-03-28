@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
+//  import { HttpModule } from '@angular/http';
+
 
 import { JobsRoutingModule } from './jobs-routing.module';
 import { JobsComponent } from './jobs.component';
@@ -28,7 +31,6 @@ import { FavSaveApplyComponent } from './fav-save-apply/fav-save-apply.component
 import { SharedModule } from '../shared/shared.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { JobsService } from '../services/jobs.service';
-import { HttpClientModule } from '@angular/common/http';
 
 
 
